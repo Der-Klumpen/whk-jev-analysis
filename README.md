@@ -42,10 +42,31 @@ Details in `docs/design.md`.
 ```bash
 python3 scripts/00_resolve_subset.py
 python3 scripts/01_build_ground_truth.py
-python3 scripts/02_make_tiles.py --limit 20 --preview
-python3 scripts/03_jev_item_existence.py --limit-images 8 --questions-per-request 200
-python3 scripts/04_evaluate.py outputs/runs/<run>.jsonl
+python3 scripts/06_select_run_sets.py            # Item-Teilkatalog + Bildstichprobe
+python3 scripts/02_make_tiles.py --only $(cat data/run_set_24.txt)
+python3 scripts/03_jev_item_existence.py --run messlauf --items outputs/catalog_top250.txt \
+        --only-images $(cat data/run_set_24.txt) --questions-per-request 0
+python3 scripts/04_evaluate.py outputs/runs/messlauf.jsonl
+python3 scripts/05_cost_model.py                  # Projektion Vollauf
 ```
+
+Sonden (Grenzen/Kosten): `scripts/03b_probe_limits.py` … `03e_probe_minimal.py`.
+Befunde dazu in `docs/limits.md`.
+
+## Stand
+
+- Subset/GT/Katalog/Kachelung/Runner/Auswertung fertig und gelaufen.
+- Pilot (2 Bilder, voller Katalog): docs/pilot.md. Kosten 0,71 USD.
+- Messlauf (15 Bilder, 250 Items, budget-gedeckelt): docs/run24.md.
+  Exakt P 0,36 / R 0,95; containment-tolerant P 0,70 / R 0,83 / Acc 0,96.
+- Jev rechnet das Bild **pro Frage** → voller Katalog über 557 Bilder ≈ 200 USD,
+  Katalog mit 250 Items ≈ 60 USD (docs/limits.md).
+- Befund: Ein-Zeichen-Items (`5`, `6`, `55`, `60`) sind mit dieser Frageform
+  unbrauchbar (Acc 0,067) — aus dem Katalog nehmen oder Sonderregel.
+- Offene Nutzerentscheidungen: Budget-Scope, Metrik-Konvention (exakt vs.
+  containment-tolerant), Pooling-Schwelle. Voreinstellungen: beide Metriken,
+  any-tile-Pooling + Sensitivitätsauswertung.
+- Restbudget des Test-Keys nach den Läufen: ~0,70 von 5,00 USD.
 
 Key: `~/TypeSafe-Keys/Jev-Test-Key.txt`. Budget-Wache im Runner (Abbruch bei
 konfigurierbarer Kumul-Grenze). Keine Boxen/Markierungen in den Kacheln.

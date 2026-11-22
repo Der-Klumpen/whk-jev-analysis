@@ -31,6 +31,7 @@ RUNS = ROOT / "outputs/runs"
 LEDGER = RUNS / "ledger.json"
 COST_MTOK = 0.042          # USD je 1M Input-Tokens (Preisliste TypeSafe)
 MAX_AR, MAX_SIDE, MIN_SIDE = 2.5, 1568, 280
+PAIRS_PER_REQUEST = 55
 INSTR = ("The images {refs} show consecutive, overlapping sections of one "
          "unwrapped tire wall, ordered left to right. Is the exact text `{item}` "
          "readable on the tire? Answer yes or no.")
@@ -158,7 +159,8 @@ def run_image(row: dict, items: list[str], meta: dict, qpr: int,
 
     jobs = []
     for gi, (idxs, tok) in enumerate(groups):
-        q = qpr if qpr > 0 else max(4, int(budget / (tok + 25)))
+        # skalenfreie Regel: ~55 Kachel-Frage-Paare je Request (gemessen ~390 Token/Paar)
+        q = qpr if qpr > 0 else max(1, int(PAIRS_PER_REQUEST / max(1, len(idxs))))
         for start in range(0, len(items), q):
             jobs.append((gi, [files[i] for i in idxs], items[start:start + q]))
 
@@ -167,7 +169,24 @@ def run_image(row: dict, items: list[str], meta: dict, qpr: int,
 
     def work(job):
         gi, fl, chunk = job
-        resp = call_jev(build_request(fl, chunk, f"{row['image_id']}-{gi}-{chunk[0]}", style=style))
+        try:
+            resp = call_jev(build_request(fl, chunk, f"{row['image_id']}-{gi}-{chunk[0]}", style=style))
+        except RuntimeError as e:
+            msg = str(e)
+            # Adaptiv: Überschreitung -> Block halbieren, notfalls Kachelgruppe teilen
+            if len(chunk) > 4:
+                mid = len(chunk) // 2
+                out, usd = [], 0.0
+                for c in (chunk[:mid], chunk[mid:]):
+                    o, u = work((gi, fl, c)); out += o; usd += u
+                return out, usd
+            if len(fl) > 1:
+                mid = len(fl) // 2
+                out, usd = [], 0.0
+                for f in (fl[:mid], fl[mid:]):
+                    o, u = work((gi, f, chunk)); out += o; usd += u
+                return out, usd
+            raise RuntimeError(msg) from None
         tok = resp.get("usage", {}).get("input_tokens", 0)
         usd = tok / 1e6 * COST_MTOK
         with lock:

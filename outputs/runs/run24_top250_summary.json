@@ -1,0 +1,9 @@
+{
+  "run": "run24_top250",
+  "images": 15,
+  "answers": 9250,
+  "cost_usd": 3.5609,
+  "cum_usd": 4.2997,
+  "sec": 297.0,
+  "out": "/home/iiot/data/jev-analysis/outputs/runs/run24_top250.jsonl"
+}

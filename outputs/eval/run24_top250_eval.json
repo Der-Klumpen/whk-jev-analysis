@@ -1,0 +1,865 @@
+{
+ "meta": {
+  "run": "outputs/runs/run24_top250.jsonl",
+  "questions_answerable": 3750,
+  "catalog": 824,
+  "images": 15
+ },
+ "results": {
+  "run": "outputs/runs/run24_top250.jsonl",
+  "overall": {
+   "slice": "alle",
+   "n": 3750,
+   "tp": 124,
+   "fp": 220,
+   "fn": 7,
+   "tn": 3399,
+   "acc": 0.9395,
+   "precision": 0.3605,
+   "recall": 0.9466,
+   "f1": 0.5221,
+   "ece": 0.1071,
+   "unanswered": 0
+  },
+  "overall_loose": {
+   "slice": "alle (containment-tolerantes GT)",
+   "n": 3750,
+   "tp": 240,
+   "fp": 104,
+   "fn": 51,
+   "tn": 3355,
+   "acc": 0.9587,
+   "precision": 0.6977,
+   "recall": 0.8247,
+   "f1": 0.7559,
+   "ece": 0.0644,
+   "unanswered": 0
+  },
+  "by_group": [
+   {
+    "slice": "VW",
+    "n": 750,
+    "tp": 33,
+    "fp": 68,
+    "fn": 2,
+    "tn": 647,
+    "acc": 0.9067,
+    "precision": 0.3267,
+    "recall": 0.9429,
+    "f1": 0.4853,
+    "ece": 0.1801,
+    "unanswered": 0
+   },
+   {
+    "slice": "4W",
+    "n": 3000,
+    "tp": 91,
+    "fp": 152,
+    "fn": 5,
+    "tn": 2752,
+    "acc": 0.9477,
+    "precision": 0.3745,
+    "recall": 0.9479,
+    "f1": 0.5369,
+    "ece": 0.0888,
+    "unanswered": 0
+   }
+  ],
+  "by_group_loose": [
+   {
+    "slice": "VW",
+    "n": 750,
+    "tp": 66,
+    "fp": 35,
+    "fn": 7,
+    "tn": 642,
+    "acc": 0.944,
+    "precision": 0.6535,
+    "recall": 0.9041,
+    "f1": 0.7586,
+    "ece": 0.1294,
+    "unanswered": 0
+   },
+   {
+    "slice": "4W",
+    "n": 3000,
+    "tp": 174,
+    "fp": 69,
+    "fn": 44,
+    "tn": 2713,
+    "acc": 0.9623,
+    "precision": 0.716,
+    "recall": 0.7982,
+    "f1": 0.7549,
+    "ece": 0.0481,
+    "unanswered": 0
+   }
+  ],
+  "by_item_len": [
+   {
+    "slice": "Länge 1 Zeichen",
+    "n": 30,
+    "tp": 0,
+    "fp": 28,
+    "fn": 0,
+    "tn": 2,
+    "acc": 0.0667,
+    "precision": 0.0,
+    "recall": null,
+    "f1": null,
+    "ece": 0.8697,
+    "unanswered": 0
+   },
+   {
+    "slice": "Länge mehr",
+    "n": 3720,
+    "tp": 124,
+    "fp": 192,
+    "fn": 7,
+    "tn": 3397,
+    "acc": 0.9465,
+    "precision": 0.3924,
+    "recall": 0.9466,
+    "f1": 0.5548,
+    "ece": 0.1009,
+    "unanswered": 0
+   }
+  ],
+  "by_freq": [
+   {
+    "slice": "1-10 Bilder",
+    "n": 2385,
+    "tp": 25,
+    "fp": 158,
+    "fn": 2,
+    "tn": 2200,
+    "acc": 0.9329,
+    "precision": 0.1366,
+    "recall": 0.9259,
+    "f1": 0.2381,
+    "ece": 0.1124,
+    "unanswered": 0
+   },
+   {
+    "slice": "11-50",
+    "n": 990,
+    "tp": 32,
+    "fp": 21,
+    "fn": 4,
+    "tn": 933,
+    "acc": 0.9747,
+    "precision": 0.6038,
+    "recall": 0.8889,
+    "f1": 0.7191,
+    "ece": 0.0789,
+    "unanswered": 0
+   },
+   {
+    "slice": ">50 Bilder (item präsent)",
+    "n": 375,
+    "tp": 67,
+    "fp": 41,
+    "fn": 1,
+    "tn": 266,
+    "acc": 0.888,
+    "precision": 0.6204,
+    "recall": 0.9853,
+    "f1": 0.7614,
+    "ece": 0.1475,
+    "unanswered": 0
+   }
+  ],
+  "by_edge": [
+   {
+    "slice": "Randfragment (pos)",
+    "n": 1,
+    "tp": 1,
+    "fp": 0,
+    "fn": 0,
+    "tn": 0,
+    "acc": 1.0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0,
+    "ece": 0.0,
+    "unanswered": 0
+   },
+   {
+    "slice": "kein Rand",
+    "n": 3749,
+    "tp": 123,
+    "fp": 220,
+    "fn": 7,
+    "tn": 3399,
+    "acc": 0.9395,
+    "precision": 0.3586,
+    "recall": 0.9462,
+    "f1": 0.5201,
+    "ece": 0.1071,
+    "unanswered": 0
+   }
+  ]
+ },
+ "top_fp": [
+  [
+   "5",
+   15
+  ],
+  [
+   "6",
+   13
+  ],
+  [
+   "LOAD",
+   11
+  ],
+  [
+   "E4",
+   9
+  ],
+  [
+   "WINTER",
+   8
+  ],
+  [
+   "ntal",
+   8
+  ],
+  [
+   "EXTRA",
+   8
+  ],
+  [
+   "UTSIDE",
+   8
+  ],
+  [
+   "55",
+   5
+  ],
+  [
+   "STONE",
+   5
+  ],
+  [
+   "60",
+   5
+  ],
+  [
+   "TONE",
+   5
+  ],
+  [
+   "BRI",
+   5
+  ],
+  [
+   "ONE",
+   4
+  ],
+  [
+   "45",
+   4
+  ],
+  [
+   "ESTONE",
+   4
+  ],
+  [
+   "BRIDGEST",
+   4
+  ],
+  [
+   "BRIDGESTON",
+   4
+  ],
+  [
+   "BRIDGE",
+   4
+  ],
+  [
+   "BRIDG",
+   4
+  ],
+  [
+   "IDGESTONE",
+   4
+  ],
+  [
+   "Conti",
+   3
+  ],
+  [
+   "Contine",
+   3
+  ],
+  [
+   "tact",
+   3
+  ],
+  [
+   "TYRES",
+   3
+  ]
+ ],
+ "top_fn": [
+  [
+   "ContiWinterContact TS 800",
+   1
+  ],
+  [
+   "TS 850 P",
+   1
+  ],
+  [
+   "PILOT ALPIN 5",
+   1
+  ],
+  [
+   "PIRELLI",
+   1
+  ],
+  [
+   "RSC",
+   1
+  ],
+  [
+   "0210458 S2WR2",
+   1
+  ],
+  [
+   "02114237",
+   1
+  ]
+ ],
+ "worst_items": [
+  {
+   "slice": "5",
+   "n": 15,
+   "tp": 0,
+   "fp": 15,
+   "fn": 0,
+   "tn": 0,
+   "acc": 0.0,
+   "precision": 0.0,
+   "recall": null,
+   "f1": null,
+   "ece": 0.9273,
+   "unanswered": 0,
+   "gt_count": 4
+  },
+  {
+   "slice": "6",
+   "n": 15,
+   "tp": 0,
+   "fp": 13,
+   "fn": 0,
+   "tn": 2,
+   "acc": 0.1333,
+   "precision": 0.0,
+   "recall": null,
+   "f1": null,
+   "ece": 0.812,
+   "unanswered": 0,
+   "gt_count": 109
+  },
+  {
+   "slice": "LOAD",
+   "n": 15,
+   "tp": 1,
+   "fp": 11,
+   "fn": 0,
+   "tn": 3,
+   "acc": 0.2667,
+   "precision": 0.0833,
+   "recall": 1.0,
+   "f1": 0.1538,
+   "ece": 0.7493,
+   "unanswered": 0,
+   "gt_count": 8
+  },
+  {
+   "slice": "E4",
+   "n": 15,
+   "tp": 2,
+   "fp": 9,
+   "fn": 0,
+   "tn": 4,
+   "acc": 0.4,
+   "precision": 0.1818,
+   "recall": 1.0,
+   "f1": 0.3077,
+   "ece": 0.5647,
+   "unanswered": 0,
+   "gt_count": 237
+  },
+  {
+   "slice": "WINTER",
+   "n": 15,
+   "tp": 1,
+   "fp": 8,
+   "fn": 0,
+   "tn": 6,
+   "acc": 0.4667,
+   "precision": 0.1111,
+   "recall": 1.0,
+   "f1": 0.2,
+   "ece": 0.4773,
+   "unanswered": 0,
+   "gt_count": 52
+  },
+  {
+   "slice": "EXTRA",
+   "n": 15,
+   "tp": 1,
+   "fp": 8,
+   "fn": 0,
+   "tn": 6,
+   "acc": 0.4667,
+   "precision": 0.1111,
+   "recall": 1.0,
+   "f1": 0.2,
+   "ece": 0.57,
+   "unanswered": 0,
+   "gt_count": 10
+  },
+  {
+   "slice": "ntal",
+   "n": 15,
+   "tp": 0,
+   "fp": 8,
+   "fn": 0,
+   "tn": 7,
+   "acc": 0.4667,
+   "precision": 0.0,
+   "recall": null,
+   "f1": null,
+   "ece": 0.5453,
+   "unanswered": 0,
+   "gt_count": 3
+  },
+  {
+   "slice": "UTSIDE",
+   "n": 15,
+   "tp": 0,
+   "fp": 8,
+   "fn": 0,
+   "tn": 7,
+   "acc": 0.4667,
+   "precision": 0.0,
+   "recall": null,
+   "f1": null,
+   "ece": 0.56,
+   "unanswered": 0,
+   "gt_count": 3
+  },
+  {
+   "slice": "55",
+   "n": 15,
+   "tp": 0,
+   "fp": 5,
+   "fn": 0,
+   "tn": 10,
+   "acc": 0.6667,
+   "precision": 0.0,
+   "recall": null,
+   "f1": null,
+   "ece": 0.4307,
+   "unanswered": 0,
+   "gt_count": 9
+  },
+  {
+   "slice": "60",
+   "n": 15,
+   "tp": 0,
+   "fp": 5,
+   "fn": 0,
+   "tn": 10,
+   "acc": 0.6667,
+   "precision": 0.0,
+   "recall": null,
+   "f1": null,
+   "ece": 0.4127,
+   "unanswered": 0,
+   "gt_count": 5
+  },
+  {
+   "slice": "TONE",
+   "n": 15,
+   "tp": 0,
+   "fp": 5,
+   "fn": 0,
+   "tn": 10,
+   "acc": 0.6667,
+   "precision": 0.0,
+   "recall": null,
+   "f1": null,
+   "ece": 0.388,
+   "unanswered": 0,
+   "gt_count": 4
+  },
+  {
+   "slice": "BRI",
+   "n": 15,
+   "tp": 0,
+   "fp": 5,
+   "fn": 0,
+   "tn": 10,
+   "acc": 0.6667,
+   "precision": 0.0,
+   "recall": null,
+   "f1": null,
+   "ece": 0.4573,
+   "unanswered": 0,
+   "gt_count": 3
+  },
+  {
+   "slice": "STONE",
+   "n": 15,
+   "tp": 0,
+   "fp": 5,
+   "fn": 0,
+   "tn": 10,
+   "acc": 0.6667,
+   "precision": 0.0,
+   "recall": null,
+   "f1": null,
+   "ece": 0.3973,
+   "unanswered": 0,
+   "gt_count": 3
+  },
+  {
+   "slice": "ESTONE",
+   "n": 15,
+   "tp": 0,
+   "fp": 4,
+   "fn": 0,
+   "tn": 11,
+   "acc": 0.7333,
+   "precision": 0.0,
+   "recall": null,
+   "f1": null,
+   "ece": 0.3153,
+   "unanswered": 0,
+   "gt_count": 8
+  },
+  {
+   "slice": "BRIDGEST",
+   "n": 15,
+   "tp": 0,
+   "fp": 4,
+   "fn": 0,
+   "tn": 11,
+   "acc": 0.7333,
+   "precision": 0.0,
+   "recall": null,
+   "f1": null,
+   "ece": 0.2753,
+   "unanswered": 0,
+   "gt_count": 7
+  },
+  {
+   "slice": "ONE",
+   "n": 15,
+   "tp": 1,
+   "fp": 4,
+   "fn": 0,
+   "tn": 10,
+   "acc": 0.7333,
+   "precision": 0.2,
+   "recall": 1.0,
+   "f1": 0.3333,
+   "ece": 0.3513,
+   "unanswered": 0,
+   "gt_count": 7
+  },
+  {
+   "slice": "BRIDGESTON",
+   "n": 15,
+   "tp": 0,
+   "fp": 4,
+   "fn": 0,
+   "tn": 11,
+   "acc": 0.7333,
+   "precision": 0.0,
+   "recall": null,
+   "f1": null,
+   "ece": 0.2093,
+   "unanswered": 0,
+   "gt_count": 5
+  },
+  {
+   "slice": "BRIDGE",
+   "n": 15,
+   "tp": 0,
+   "fp": 4,
+   "fn": 0,
+   "tn": 11,
+   "acc": 0.7333,
+   "precision": 0.0,
+   "recall": null,
+   "f1": null,
+   "ece": 0.3233,
+   "unanswered": 0,
+   "gt_count": 4
+  },
+  {
+   "slice": "45",
+   "n": 15,
+   "tp": 0,
+   "fp": 4,
+   "fn": 0,
+   "tn": 11,
+   "acc": 0.7333,
+   "precision": 0.0,
+   "recall": null,
+   "f1": null,
+   "ece": 0.286,
+   "unanswered": 0,
+   "gt_count": 3
+  },
+  {
+   "slice": "BRIDG",
+   "n": 15,
+   "tp": 0,
+   "fp": 4,
+   "fn": 0,
+   "tn": 11,
+   "acc": 0.7333,
+   "precision": 0.0,
+   "recall": null,
+   "f1": null,
+   "ece": 0.34,
+   "unanswered": 0,
+   "gt_count": 3
+  },
+  {
+   "slice": "IDGESTONE",
+   "n": 15,
+   "tp": 0,
+   "fp": 4,
+   "fn": 0,
+   "tn": 11,
+   "acc": 0.7333,
+   "precision": 0.0,
+   "recall": null,
+   "f1": null,
+   "ece": 0.256,
+   "unanswered": 0,
+   "gt_count": 3
+  },
+  {
+   "slice": "MO",
+   "n": 15,
+   "tp": 6,
+   "fp": 3,
+   "fn": 0,
+   "tn": 6,
+   "acc": 0.8,
+   "precision": 0.6667,
+   "recall": 1.0,
+   "f1": 0.8,
+   "ece": 0.2433,
+   "unanswered": 0,
+   "gt_count": 206
+  },
+  {
+   "slice": "Conti",
+   "n": 15,
+   "tp": 0,
+   "fp": 3,
+   "fn": 0,
+   "tn": 12,
+   "acc": 0.8,
+   "precision": 0.0,
+   "recall": null,
+   "f1": null,
+   "ece": 0.2433,
+   "unanswered": 0,
+   "gt_count": 44
+  },
+  {
+   "slice": "RIDGESTONE",
+   "n": 15,
+   "tp": 0,
+   "fp": 3,
+   "fn": 0,
+   "tn": 12,
+   "acc": 0.8,
+   "precision": 0.0,
+   "recall": null,
+   "f1": null,
+   "ece": 0.1787,
+   "unanswered": 0,
+   "gt_count": 5
+  },
+  {
+   "slice": "Contine",
+   "n": 15,
+   "tp": 0,
+   "fp": 3,
+   "fn": 0,
+   "tn": 12,
+   "acc": 0.8,
+   "precision": 0.0,
+   "recall": null,
+   "f1": null,
+   "ece": 0.252,
+   "unanswered": 0,
+   "gt_count": 4
+  }
+ ],
+ "best_items": [
+  {
+   "slice": "XT 4J T797",
+   "n": 15,
+   "tp": 0,
+   "fp": 0,
+   "fn": 0,
+   "tn": 15,
+   "acc": 1.0,
+   "precision": null,
+   "recall": null,
+   "f1": null,
+   "ece": 0.0567,
+   "unanswered": 0,
+   "gt_count": 3
+  },
+  {
+   "slice": "Winter i*cept RS2",
+   "n": 15,
+   "tp": 0,
+   "fp": 0,
+   "fn": 0,
+   "tn": 15,
+   "acc": 1.0,
+   "precision": null,
+   "recall": null,
+   "f1": null,
+   "ece": 0.0253,
+   "unanswered": 0,
+   "gt_count": 3
+  },
+  {
+   "slice": "WINTER 240",
+   "n": 15,
+   "tp": 0,
+   "fp": 0,
+   "fn": 0,
+   "tn": 15,
+   "acc": 1.0,
+   "precision": null,
+   "recall": null,
+   "f1": null,
+   "ece": 0.0487,
+   "unanswered": 0,
+   "gt_count": 3
+  },
+  {
+   "slice": "SPEED-GRIP 5",
+   "n": 15,
+   "tp": 0,
+   "fp": 0,
+   "fn": 0,
+   "tn": 15,
+   "acc": 1.0,
+   "precision": null,
+   "recall": null,
+   "f1": null,
+   "ece": 0.0313,
+   "unanswered": 0,
+   "gt_count": 3
+  },
+  {
+   "slice": "P ZERO",
+   "n": 15,
+   "tp": 0,
+   "fp": 0,
+   "fn": 0,
+   "tn": 15,
+   "acc": 1.0,
+   "precision": null,
+   "recall": null,
+   "f1": null,
+   "ece": 0.0487,
+   "unanswered": 0,
+   "gt_count": 3
+  },
+  {
+   "slice": "nokian",
+   "n": 15,
+   "tp": 0,
+   "fp": 0,
+   "fn": 0,
+   "tn": 15,
+   "acc": 1.0,
+   "precision": null,
+   "recall": null,
+   "f1": null,
+   "ece": 0.0487,
+   "unanswered": 0,
+   "gt_count": 3
+  },
+  {
+   "slice": "HC22 017X",
+   "n": 15,
+   "tp": 0,
+   "fp": 0,
+   "fn": 0,
+   "tn": 15,
+   "acc": 1.0,
+   "precision": null,
+   "recall": null,
+   "f1": null,
+   "ece": 0.0267,
+   "unanswered": 0,
+   "gt_count": 3
+  },
+  {
+   "slice": "H1MT 05RX",
+   "n": 15,
+   "tp": 0,
+   "fp": 0,
+   "fn": 0,
+   "tn": 15,
+   "acc": 1.0,
+   "precision": null,
+   "recall": null,
+   "f1": null,
+   "ece": 0.0187,
+   "unanswered": 0,
+   "gt_count": 3
+  },
+  {
+   "slice": "FT7R 06RX",
+   "n": 15,
+   "tp": 0,
+   "fp": 0,
+   "fn": 0,
+   "tn": 15,
+   "acc": 1.0,
+   "precision": null,
+   "recall": null,
+   "f1": null,
+   "ece": 0.0667,
+   "unanswered": 0,
+   "gt_count": 3
+  },
+  {
+   "slice": "DOT CNHW PVXK",
+   "n": 15,
+   "tp": 1,
+   "fp": 0,
+   "fn": 0,
+   "tn": 14,
+   "acc": 1.0,
+   "precision": 1.0,
+   "recall": 1.0,
+   "f1": 1.0,
+   "ece": 0.0593,
+   "unanswered": 0,
+   "gt_count": 3
+  }
+ ],
+ "rows": 3750
+}
