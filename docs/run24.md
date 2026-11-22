@@ -15,16 +15,22 @@ Startset waren 12 VW + 12 4W; fertig wurden 12 4W und 3 VW.
   (55 Kachel-Frage-Paare/Request) umgestellt. Der Lauf ist damit teurer als
   nötig, inhaltlich aber gültig.
 
-## Kosten (gemessen)
+## Kosten (gemessen, aus den Laufzeilen)
 
 | Gruppe | Bilder | Kosten | je Bild |
 |---|---|---|---|
-| VW | 3 | 0,784 USD | 0,261 USD |
-| 4W | 12 | 1,540 USD | 0,128 USD |
+| VW | 3 | 1,200 USD | 0,400 USD |
+| 4W | 12 | 2,361 USD | 0,197 USD |
 
-Hochrechnung 557 Bilder × 250 Items mit dieser (teuren) Blockgröße: ~110 USD.
-Mit der korrigierten Blockgröße etwa die Hälfte (~50–60 USD); voller Katalog
-(824 Items) entsprechend ~180–200 USD.
+Hochrechnung 557 Bilder × 250 Items mit dieser (zu kleinen) Blockgröße:
+**~168 USD**. Mit der korrigierten Blockgröße (55 Kachel-Frage-Paare/Request,
+rund halb so viele Requests) etwa 80–90 USD; voller Katalog (824 Items)
+entsprechend ~280 USD bei alter, ~180 USD bei korrigierter Blockgröße.
+
+Zur Vorsicht bei Zwischenrechnungen: eine Zählung über eindeutige
+Token-Signaturen untertreibt (4W 0,128 statt 0,197 USD/Bild), weil Requests mit
+gleicher Kachelgruppe/Tokenzahl zu einer Signatur zusammenfallen. Belastbar sind
+nur die Zeilensummen je Bild.
 
 ## Ergebnis
 

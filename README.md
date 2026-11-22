@@ -59,8 +59,8 @@ Befunde dazu in `docs/limits.md`.
 - Pilot (2 Bilder, voller Katalog): docs/pilot.md. Kosten 0,71 USD.
 - Messlauf (15 Bilder, 250 Items, budget-gedeckelt): docs/run24.md.
   Exakt P 0,36 / R 0,95; containment-tolerant P 0,70 / R 0,83 / Acc 0,96.
-- Jev rechnet das Bild **pro Frage** → voller Katalog über 557 Bilder ≈ 200 USD,
-  Katalog mit 250 Items ≈ 60 USD (docs/limits.md).
+- Jev rechnet das Bild **pro Frage** → voller Katalog über 557 Bilder ≈ 180-280 USD
+  (je nach Blockgroesse), Katalog mit 250 Items ≈ 80-170 USD (docs/limits.md, docs/run24.md).
 - Befund: Ein-Zeichen-Items (`5`, `6`, `55`, `60`) sind mit dieser Frageform
   unbrauchbar (Acc 0,067) — aus dem Katalog nehmen oder Sonderregel.
 - Offene Nutzerentscheidungen: Budget-Scope, Metrik-Konvention (exakt vs.
