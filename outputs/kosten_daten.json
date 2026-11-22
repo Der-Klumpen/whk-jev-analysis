@@ -1,0 +1,524 @@
+{
+ "preis_usd_pro_mtok": 0.042,
+ "hinweis": "Messpunkte aus echten Requests am 22.11.2026, je Zeile ein Request mit Ergebnis",
+ "sonden": [
+  {
+   "quelle": "probe.json",
+   "kacheln": 1,
+   "fragen": 1,
+   "input_token": 6665,
+   "usd": 0.00028,
+   "usd_je_frage": 0.00028,
+   "usd_je_kachel": 0.00028,
+   "ok": true,
+   "fehler": ""
+  },
+  {
+   "quelle": "probe.json",
+   "kacheln": 1,
+   "fragen": 50,
+   "input_token": null,
+   "usd": null,
+   "usd_je_frage": null,
+   "usd_je_kachel": null,
+   "ok": false,
+   "fehler": "HTTP 400: {\"detail\":{\"error_type\":\"max_tokens_exceeded\"}}"
+  },
+  {
+   "quelle": "probe.json",
+   "kacheln": 1,
+   "fragen": 824,
+   "input_token": null,
+   "usd": null,
+   "usd_je_frage": null,
+   "usd_je_kachel": null,
+   "ok": false,
+   "fehler": "HTTP 413: {\"detail\":{\"error_type\":\"api_usage_error\",\"message\":\"Request exceeds size limits.\"}}"
+  },
+  {
+   "quelle": "probe.json",
+   "kacheln": 19,
+   "fragen": 10,
+   "input_token": null,
+   "usd": null,
+   "usd_je_frage": null,
+   "usd_je_kachel": null,
+   "ok": false,
+   "fehler": "HTTP 413: {\"detail\":{\"error_type\":\"api_usage_error\",\"message\":\"Request exceeds size limits.\"}}"
+  },
+  {
+   "quelle": "probe.json",
+   "kacheln": 19,
+   "fragen": 824,
+   "input_token": null,
+   "usd": null,
+   "usd_je_frage": null,
+   "usd_je_kachel": null,
+   "ok": false,
+   "fehler": "HTTP 413: {\"detail\":{\"error_type\":\"api_usage_error\",\"message\":\"Request exceeds size limits.\"}}"
+  },
+  {
+   "quelle": "probe2.json",
+   "kacheln": 1,
+   "fragen": 20,
+   "input_token": null,
+   "usd": null,
+   "usd_je_frage": null,
+   "usd_je_kachel": null,
+   "ok": false,
+   "fehler": "HTTP 400: {\"detail\":{\"error_type\":\"max_tokens_exceeded\"}}"
+  },
+  {
+   "quelle": "probe2.json",
+   "kacheln": 1,
+   "fragen": 35,
+   "input_token": null,
+   "usd": null,
+   "usd_je_frage": null,
+   "usd_je_kachel": null,
+   "ok": false,
+   "fehler": "HTTP 400: {\"detail\":{\"error_type\":\"max_tokens_exceeded\"}}"
+  },
+  {
+   "quelle": "probe2.json",
+   "kacheln": 1,
+   "fragen": 50,
+   "input_token": null,
+   "usd": null,
+   "usd_je_frage": null,
+   "usd_je_kachel": null,
+   "ok": false,
+   "fehler": "HTTP 400: {\"detail\":{\"error_type\":\"max_tokens_exceeded\"}}"
+  },
+  {
+   "quelle": "probe2.json",
+   "kacheln": 2,
+   "fragen": 1,
+   "input_token": 12943,
+   "usd": 0.000544,
+   "usd_je_frage": 0.000544,
+   "usd_je_kachel": 0.000272,
+   "ok": true,
+   "fehler": ""
+  },
+  {
+   "quelle": "probe2.json",
+   "kacheln": 4,
+   "fragen": 1,
+   "input_token": 25501,
+   "usd": 0.001071,
+   "usd_je_frage": 0.001071,
+   "usd_je_kachel": 0.000268,
+   "ok": true,
+   "fehler": ""
+  },
+  {
+   "quelle": "probe2.json",
+   "kacheln": 1,
+   "fragen": 50,
+   "input_token": null,
+   "usd": null,
+   "usd_je_frage": null,
+   "usd_je_kachel": null,
+   "ok": false,
+   "fehler": "HTTP 400: {\"detail\":{\"error_type\":\"max_tokens_exceeded\"}}"
+  },
+  {
+   "quelle": "probe2.json",
+   "kacheln": 1,
+   "fragen": 150,
+   "input_token": null,
+   "usd": null,
+   "usd_je_frage": null,
+   "usd_je_kachel": null,
+   "ok": false,
+   "fehler": "HTTP 400: {\"detail\":{\"error_type\":\"max_tokens_exceeded\"}}"
+  },
+  {
+   "quelle": "probe2.json",
+   "kacheln": 1,
+   "fragen": 200,
+   "input_token": null,
+   "usd": null,
+   "usd_je_frage": null,
+   "usd_je_kachel": null,
+   "ok": false,
+   "fehler": "HTTP 400: {\"detail\":{\"error_type\":\"max_tokens_exceeded\"}}"
+  },
+  {
+   "quelle": "probe3.json",
+   "kacheln": 1,
+   "fragen": 5,
+   "input_token": 1979,
+   "usd": 8.3e-05,
+   "usd_je_frage": 1.7e-05,
+   "usd_je_kachel": 8.3e-05,
+   "ok": true,
+   "fehler": ""
+  },
+  {
+   "quelle": "probe3.json",
+   "kacheln": 1,
+   "fragen": 10,
+   "input_token": 3689,
+   "usd": 0.000155,
+   "usd_je_frage": 1.5e-05,
+   "usd_je_kachel": 0.000155,
+   "ok": true,
+   "fehler": ""
+  },
+  {
+   "quelle": "probe3.json",
+   "kacheln": 1,
+   "fragen": 15,
+   "input_token": 5411,
+   "usd": 0.000227,
+   "usd_je_frage": 1.5e-05,
+   "usd_je_kachel": 0.000227,
+   "ok": true,
+   "fehler": ""
+  },
+  {
+   "quelle": "probe3.json",
+   "kacheln": 1,
+   "fragen": 20,
+   "input_token": 7181,
+   "usd": 0.000302,
+   "usd_je_frage": 1.5e-05,
+   "usd_je_kachel": 0.000302,
+   "ok": true,
+   "fehler": ""
+  },
+  {
+   "quelle": "probe3.json",
+   "kacheln": 1,
+   "fragen": 30,
+   "input_token": 10658,
+   "usd": 0.000448,
+   "usd_je_frage": 1.5e-05,
+   "usd_je_kachel": 0.000448,
+   "ok": true,
+   "fehler": ""
+  },
+  {
+   "quelle": "probe3.json",
+   "kacheln": 6,
+   "fragen": 1,
+   "input_token": 24621,
+   "usd": 0.001034,
+   "usd_je_frage": 0.001034,
+   "usd_je_kachel": 0.000172,
+   "ok": true,
+   "fehler": ""
+  },
+  {
+   "quelle": "probe3.json",
+   "kacheln": 10,
+   "fragen": 1,
+   "input_token": null,
+   "usd": null,
+   "usd_je_frage": null,
+   "usd_je_kachel": null,
+   "ok": false,
+   "fehler": "HTTP 400: {\"detail\":{\"error_type\":\"max_tokens_exceeded\"}}"
+  },
+  {
+   "quelle": "probe3.json",
+   "kacheln": 14,
+   "fragen": 1,
+   "input_token": null,
+   "usd": null,
+   "usd_je_frage": null,
+   "usd_je_kachel": null,
+   "ok": false,
+   "fehler": "HTTP 400: {\"detail\":{\"error_type\":\"max_tokens_exceeded\"}}"
+  },
+  {
+   "quelle": "probe3.json",
+   "kacheln": 18,
+   "fragen": 1,
+   "input_token": null,
+   "usd": null,
+   "usd_je_frage": null,
+   "usd_je_kachel": null,
+   "ok": false,
+   "fehler": "HTTP 400: {\"detail\":{\"error_type\":\"max_tokens_exceeded\"}}"
+  },
+  {
+   "quelle": "probe3.json",
+   "kacheln": 12,
+   "fragen": 5,
+   "input_token": null,
+   "usd": null,
+   "usd_je_frage": null,
+   "usd_je_kachel": null,
+   "ok": false,
+   "fehler": "HTTP 400: {\"detail\":{\"error_type\":\"max_tokens_exceeded\"}}"
+  },
+  {
+   "quelle": "probe3.json",
+   "kacheln": 12,
+   "fragen": 10,
+   "input_token": null,
+   "usd": null,
+   "usd_je_frage": null,
+   "usd_je_kachel": null,
+   "ok": false,
+   "fehler": "HTTP 400: {\"detail\":{\"error_type\":\"max_tokens_exceeded\"}}"
+  },
+  {
+   "quelle": "probe4.json",
+   "kacheln": 1,
+   "fragen": 30,
+   "input_token": 9760,
+   "usd": 0.00041,
+   "usd_je_frage": 1.4e-05,
+   "usd_je_kachel": 0.00041,
+   "ok": true,
+   "fehler": ""
+  },
+  {
+   "quelle": "probe4.json",
+   "kacheln": 7,
+   "fragen": 1,
+   "input_token": null,
+   "usd": null,
+   "usd_je_frage": null,
+   "usd_je_kachel": null,
+   "ok": false,
+   "fehler": "HTTP 400: {\"detail\":{\"error_type\":\"api_usage_error\",\"message\":\"Invalid image req"
+  },
+  {
+   "quelle": "probe4.json",
+   "kacheln": 8,
+   "fragen": 1,
+   "input_token": null,
+   "usd": null,
+   "usd_je_frage": null,
+   "usd_je_kachel": null,
+   "ok": false,
+   "fehler": "HTTP 400: {\"detail\":{\"error_type\":\"api_usage_error\",\"message\":\"Invalid image req"
+  },
+  {
+   "quelle": "probe4.json",
+   "kacheln": 9,
+   "fragen": 1,
+   "input_token": null,
+   "usd": null,
+   "usd_je_frage": null,
+   "usd_je_kachel": null,
+   "ok": false,
+   "fehler": "HTTP 400: {\"detail\":{\"error_type\":\"api_usage_error\",\"message\":\"Invalid image req"
+  },
+  {
+   "quelle": "probe4.json",
+   "kacheln": 1,
+   "fragen": 100,
+   "input_token": null,
+   "usd": null,
+   "usd_je_frage": null,
+   "usd_je_kachel": null,
+   "ok": false,
+   "fehler": "HTTP 400: {\"detail\":{\"error_type\":\"max_tokens_exceeded\"}}"
+  },
+  {
+   "quelle": "probe4.json",
+   "kacheln": 1,
+   "fragen": 824,
+   "input_token": null,
+   "usd": null,
+   "usd_je_frage": null,
+   "usd_je_kachel": null,
+   "ok": false,
+   "fehler": "HTTP 413: {\"detail\":{\"error_type\":\"api_usage_error\",\"message\":\"Request exceeds s"
+  },
+  {
+   "quelle": "probe5.json",
+   "kacheln": 1,
+   "fragen": 30,
+   "input_token": null,
+   "usd": null,
+   "usd_je_frage": null,
+   "usd_je_kachel": null,
+   "ok": false,
+   "fehler": "HTTP 400: {\"detail\":{\"error_type\":\"api_usage_error\",\"message\":\"Invalid image request.\"}}"
+  },
+  {
+   "quelle": "probe5.json",
+   "kacheln": 1,
+   "fragen": 100,
+   "input_token": null,
+   "usd": null,
+   "usd_je_frage": null,
+   "usd_je_kachel": null,
+   "ok": false,
+   "fehler": "HTTP 400: {\"detail\":{\"error_type\":\"api_usage_error\",\"message\":\"Invalid image request.\"}}"
+  },
+  {
+   "quelle": "probe5.json",
+   "kacheln": 6,
+   "fragen": 1,
+   "input_token": null,
+   "usd": null,
+   "usd_je_frage": null,
+   "usd_je_kachel": null,
+   "ok": false,
+   "fehler": "HTTP 400: {\"detail\":{\"error_type\":\"api_usage_error\",\"message\":\"Invalid image request.\"}}"
+  },
+  {
+   "quelle": "probe5.json",
+   "kacheln": 1,
+   "fragen": 100,
+   "input_token": null,
+   "usd": null,
+   "usd_je_frage": null,
+   "usd_je_kachel": null,
+   "ok": false,
+   "fehler": "HTTP 400: {\"detail\":{\"error_type\":\"api_usage_error\",\"message\":\"Invalid image request.\"}}"
+  }
+ ],
+ "lauf_bildkosten": [
+  {
+   "lauf": "pilot",
+   "gruppe": "4W",
+   "bild": "418185599_HR",
+   "items": 824,
+   "usd": 0.094,
+   "antworten": 824
+  },
+  {
+   "lauf": "pilot",
+   "gruppe": "VW",
+   "bild": "893c4666…_train",
+   "items": 824,
+   "usd": 0.6144,
+   "antworten": 4944
+  },
+  {
+   "lauf": "run24_top250",
+   "gruppe": "4W",
+   "bild": "4W-Bild 1",
+   "items": 250,
+   "usd": 0.2216,
+   "antworten": 500
+  },
+  {
+   "lauf": "run24_top250",
+   "gruppe": "4W",
+   "bild": "4W-Bild 2",
+   "items": 250,
+   "usd": 0.1945,
+   "antworten": 500
+  },
+  {
+   "lauf": "run24_top250",
+   "gruppe": "4W",
+   "bild": "4W-Bild 3",
+   "items": 250,
+   "usd": 0.1945,
+   "antworten": 500
+  },
+  {
+   "lauf": "run24_top250",
+   "gruppe": "4W",
+   "bild": "4W-Bild 4",
+   "items": 250,
+   "usd": 0.1945,
+   "antworten": 500
+  },
+  {
+   "lauf": "run24_top250",
+   "gruppe": "4W",
+   "bild": "4W-Bild 5",
+   "items": 250,
+   "usd": 0.1945,
+   "antworten": 500
+  },
+  {
+   "lauf": "run24_top250",
+   "gruppe": "4W",
+   "bild": "4W-Bild 6",
+   "items": 250,
+   "usd": 0.1945,
+   "antworten": 500
+  },
+  {
+   "lauf": "run24_top250",
+   "gruppe": "4W",
+   "bild": "4W-Bild 7",
+   "items": 250,
+   "usd": 0.1945,
+   "antworten": 500
+  },
+  {
+   "lauf": "run24_top250",
+   "gruppe": "4W",
+   "bild": "4W-Bild 8",
+   "items": 250,
+   "usd": 0.1945,
+   "antworten": 500
+  },
+  {
+   "lauf": "run24_top250",
+   "gruppe": "4W",
+   "bild": "4W-Bild 9",
+   "items": 250,
+   "usd": 0.1945,
+   "antworten": 500
+  },
+  {
+   "lauf": "run24_top250",
+   "gruppe": "4W",
+   "bild": "4W-Bild 10",
+   "items": 250,
+   "usd": 0.1945,
+   "antworten": 500
+  },
+  {
+   "lauf": "run24_top250",
+   "gruppe": "4W",
+   "bild": "4W-Bild 11",
+   "items": 250,
+   "usd": 0.1945,
+   "antworten": 500
+  },
+  {
+   "lauf": "run24_top250",
+   "gruppe": "4W",
+   "bild": "4W-Bild 12",
+   "items": 250,
+   "usd": 0.1945,
+   "antworten": 500
+  },
+  {
+   "lauf": "run24_top250",
+   "gruppe": "VW",
+   "bild": "VW-Bild 1",
+   "items": 250,
+   "usd": 0.4428,
+   "antworten": 1000
+  },
+  {
+   "lauf": "run24_top250",
+   "gruppe": "VW",
+   "bild": "VW-Bild 2",
+   "items": 250,
+   "usd": 0.38,
+   "antworten": 1250
+  },
+  {
+   "lauf": "run24_top250",
+   "gruppe": "VW",
+   "bild": "VW-Bild 3",
+   "items": 250,
+   "usd": 0.3769,
+   "antworten": 1500
+  }
+ ],
+ "budget": {
+  "verbraucht_usd": 4.2997,
+  "limit_usd": 5.0,
+  "rest_usd": 0.7003,
+  "stand": "22.11.2026 16:10"
+ }
+}

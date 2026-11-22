@@ -37,6 +37,17 @@ Die Panoramen sind bis 17.906 × 278 px (AR bis 45). Jev erzwingt 280–1568 px 
 Seite und AR ≤ 2,5 → ein Bild passt nie in einen Request. Lösung: Kachelung,
 Details in `docs/design.md`.
 
+## Dokumente
+
+- `docs/dokumentation.md` — Bericht über Aufbau, Kachelung, Request-Mechanik,
+  Ablauf, Ergebnisse, Kosten + Fachwortverzeichnis
+- `docs/abstract.md` — Abstract (eine Seite)
+- `docs/praesentation.pptx` — Kurzpräsentation (Idee, Anpassungen, Kosten)
+- `outputs/token_kosten.xlsx` — Token-/Kostenaufstellung, Projektion, Budget
+- `docs/charts/` — Diagramme der Präsentation und des Berichts
+- technische Einzeldokumente: `docs/design.md`, `docs/limits.md`,
+  `docs/pilot.md`, `docs/run24.md`
+
 ## Pipeline
 
 ```bash
