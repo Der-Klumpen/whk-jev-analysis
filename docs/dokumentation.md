@@ -271,8 +271,8 @@ Die Pipeline ist numeriert und ohne API-Zugriff bis zum Lauf wiederholbar:
 `06_select_run_sets.py` (Teilkatalog, Bildstichprobe), `02_make_tiles.py`
 (Kacheln), `03_jev_item_existence.py` (Lauf, benötigt den Schlüssel in
 `~/TypeSafe-Keys/Jev-Test-Key.txt`), `04_evaluate.py` (Auswertung),
-`05_cost_model.py` (Projektion), `07_berichte.py` (Diagramme, diese Tabelle,
-Präsentation). Kacheln und Vorschauen sind nicht versioniert, sie entstehen aus
+`05_cost_model.py` (Projektion), `07_berichte.py` (Diagramme, Kostentabelle),
+`08_deck_html.py` (Präsentation). Kacheln und Vorschauen sind nicht versioniert, sie entstehen aus
 den Skripten neu.
 
 ---

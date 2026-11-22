@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
-"""07 — Diagramme, Excel-Kostentabelle und Präsentation aus outputs/kosten_daten.json.
+"""07 — Diagramme und Excel-Kostentabelle aus outputs/kosten_daten.json.
 
-Reproduzierbar; keine API-Aufrufe. Ausgabe nach docs/charts/, outputs/token_kosten.xlsx,
-docs/praesentation.pptx.
+Reproduzierbar; keine API-Aufrufe. Ausgabe nach docs/charts/ und outputs/token_kosten.xlsx.
+Die HTML-Präsentation baut 08_deck_html.py aus diesen Diagrammen.
 """
 from __future__ import annotations
 import json
@@ -15,8 +15,6 @@ from openpyxl import Workbook
 from openpyxl.styles import Alignment, Font, PatternFill
 from openpyxl.chart import BarChart, Reference
 from openpyxl.utils import get_column_letter
-from pptx import Presentation
-from pptx.util import Inches, Pt
 
 ROOT = Path("/home/iiot/data/jev-analysis")
 CHARTS = ROOT / "docs/charts"
@@ -126,21 +124,43 @@ def chart_results() -> Path:
                 f"{daten['containment-tolerant'][m]:.2f}", ha="center", fontsize=8)
     ax.set_xticks(list(x)); ax.set_xticklabels(metriken)
     ax.set_ylim(0, 1.05); ax.set_ylabel("Wert")
-    ax.set_title("Messlauf, 15 Bilder / 250 Items: Metriken\nunter zwei GT-Konventionen")
-    ax.legend(fontsize=8)
+    ax.set_title("Messlauf, 15 Bilder / 250 Items: Metriken\nunter zwei GT-Konventionen", pad=26)
+    ax.legend(fontsize=9, loc="lower center", bbox_to_anchor=(0.5, -0.28), ncol=2, frameon=False)
     p = CHARTS / "ergebnis_metriken.png"; fig.tight_layout(); fig.savefig(p, dpi=150); plt.close(fig)
     return p
 
 
 def chart_tiles() -> Path:
-    """Vorschau-Montage des Kachel-Verfahrens (aus 02_make_tiles.py --preview)."""
-    import shutil
-    src = ROOT / "outputs/previews/tiles_preview.jpg"
+    """Breite Montage: ganzer Streifen oben, drei Kacheln mit Versatz darunter."""
+    from PIL import Image, ImageDraw
+    iid = "418185599_HR"
+    d = ROOT / "outputs/tiles" / iid
+    meta = json.loads((d / "tiles.json").read_text())
+    breite = 1560
+    with Image.open(meta["src"]) as src:
+        strip = src.convert("RGB")
+        strip = strip.resize((breite, max(1, int(strip.height * breite / strip.width))))
+    th = 300
+    tiles = []
+    for t in meta["tiles"][:3]:
+        with Image.open(d / t["file"]) as im:
+            tiles.append(im.convert("RGB").resize((int(th * 2.5), th)))
+    pad, kopf = 6, 26
+    hoehe = kopf + strip.height + pad + kopf + th + pad
+    c = Image.new("RGB", (breite + 2 * pad, hoehe), (240, 237, 229))
+    dr = ImageDraw.Draw(c)
+    dr.text((pad, 6), f"Original: {meta['src_w']} x {meta['src_h']} px — Seitenverhaeltnis "
+                      f"{meta['src_w']/meta['src_h']:.0f} (Jev erlaubt 2,5)", fill=(60, 60, 60))
+    c.paste(strip, (pad, kopf))
+    y = kopf + strip.height + pad
+    dr.text((pad, y - 18), "drei von %d Kacheln (50 %% Ueberlappung, Hoehe auf 627 px begrenzt)"
+            % meta["n_tiles"], fill=(60, 60, 60))
+    x = pad
+    for t, im in zip(meta["tiles"][:3], tiles):
+        c.paste(im, (x, y + 18)); x += im.width + pad
     dst = CHARTS / "kachelung.jpg"
-    if src.exists():
-        shutil.copyfile(src, dst)
-        return dst
-    return src
+    c.save(dst, "JPEG", quality=90)
+    return dst
 
 
 def build_xlsx() -> Path:
@@ -226,82 +246,6 @@ def build_xlsx() -> Path:
     return p
 
 
-def build_pptx(charts: dict[str, Path]) -> Path:
-    prs = Presentation()
-    prs.slide_width, prs.slide_height = Inches(13.333), Inches(7.5)
-    titel_layout, content_layout = prs.slide_layouts[0], prs.slide_layouts[1]
-
-    def bullet_slide(titel: str, punkte: list[str]) -> None:
-        s = prs.slides.add_slide(content_layout)
-        s.shapes.title.text = titel
-        tf = s.placeholders[1].text_frame
-        tf.text = punkte[0]
-        for p in punkte[1:]:
-            tf.add_paragraph().text = p
-        for p in tf.paragraphs:
-            p.font.size = Pt(17)
-
-    def bild_slide(titel: str, pfad: Path, unterzeile: str = "") -> None:
-        s = prs.slides.add_slide(prs.slide_layouts[5])
-        s.shapes.title.text = titel
-        s.shapes.title.top = Inches(0.3)
-        s.shapes.add_picture(str(pfad), Inches(1.5), Inches(1.4), height=Inches(5.2))
-        if unterzeile:
-            tb = s.shapes.add_textbox(Inches(1.5), Inches(6.7), Inches(10), Inches(0.6))
-            tb.text_frame.text = unterzeile
-            tb.text_frame.paragraphs[0].font.size = Pt(13)
-            tb.text_frame.paragraphs[0].font.italic = True
-
-    s = prs.slides.add_slide(titel_layout)
-    s.shapes.title.text = "Jev-Item-Existenz auf Reifenpanoramen"
-    s.placeholders[1].text = ("Experiment, Anpassungen, Kosten\nTestset VW/4W · Jev 1.14 (API) · 22.11.2026")
-
-    bullet_slide("Idee des Experiments", [
-        "Jedes Bild des Testsubsets wird zu jedem Katalog-Item einzeln gefragt:",
-        "„Is the exact text `X` readable on the tire?“ — Antwort nur yes/no, englisch",
-        "Katalog aus den Labels abgeleitet: 824 Items über 557 Bilder",
-        "Ground Truth ebenfalls aus den Labels, Antworten je Bild × Item gespeichert",
-        "Auswertung: Vergleich Antwort gegen GT, Accuracy/Precision/Recall/F1/ECE",
-    ])
-
-    bullet_slide("Datenlage und zwei Probleme", [
-        "Panoramen: bis 17.906 × 278 px, Seitenverhältnis bis 45",
-        "Jev erlaubt nur 280–1568 px je Seite und Seitenverhältnis ≤ 2,5",
-        "→ ein Bild passt nie in einen Request, Kachelung ist erzwungen",
-        "Labels enthalten Fragmente (`ICHELIN`, `6`) — exakter GT-Vergleich bestraft korrekte Antworten",
-        "Gegenmittel: containment-tolerantes GT als zweite, faire Metrik",
-    ])
-
-    bild_slide("Anpassung 1: Kachelung", charts["tiles"],
-               "Höhe auf 627 px begrenzt, Breite 2,5×Höhe, 50 % Überlappung, Offsets protokolliert")
-
-    bild_slide("Anpassung 2: Request-Grenzen", charts["limits"],
-               "Ab ~32.000 Token und ab 7 Bildern lehnt die API ab → Kachelgruppen ≤ 6, Blockgröße adaptiv")
-
-    bild_slide("Befund: Bild wird pro Frage abgerechnet", charts["per_q"],
-               "Kosten hängen an Fragen × Bildfläche — Bündeln spart nur HTTP-Aufrufe")
-
-    bild_slide("Anpassung 3: Blockgröße und Pooling", charts["per_image"],
-               "Erst zu klein geschätzt (Q≈3, teuer), dann skalenfrei auf 55 Kachel-Frage-Paare korrigiert")
-
-    bild_slide("Kosten", charts["projection"],
-               "Gemessen: 4W 0,197 USD/Bild, VW 0,400 USD/Bild bei 250 Items · Budget 5 USD, verbraucht 4,30 USD")
-
-    bild_slide("Ergebnis Messlauf (15 Bilder, 250 Items)", charts["results"],
-               "Recall hoch, Precision durch Fragmente und nicht annotierten Text gedrückt")
-
-    bullet_slide("Grenzen und offene Entscheidungen", [
-        "Ein-Zeichen-Items unbrauchbar: `5`, `6`, `55`, `60` → Acc 0,067, immer ja",
-        "Lange Strings sind die echte Schwäche (`PILOT ALPIN 5`, `PIRELLI`)",
-        "Offen: Budget-Scope (824/250/170/111 Items), Metrik-Konvention, Pooling-Schwelle",
-        "Ohne Aufstockung kein Vollauf: kleinster sinnvoller Scope ≈ 75 USD",
-    ])
-
-    p = ROOT / "docs/praesentation.pptx"
-    prs.save(p)
-    return p
-
-
 def main() -> int:
     CHARTS.mkdir(parents=True, exist_ok=True)
     charts = {"limits": chart_limits(), "per_q": chart_per_question(),
@@ -309,7 +253,6 @@ def main() -> int:
               "results": chart_results(), "tiles": chart_tiles()}
     print(json.dumps({"charts": [str(p) for p in charts.values()]}, indent=1))
     print("xlsx:", build_xlsx())
-    print("pptx:", build_pptx(charts))
     return 0
 
 

@@ -42,7 +42,8 @@ Details in `docs/design.md`.
 - `docs/dokumentation.md` — Bericht über Aufbau, Kachelung, Request-Mechanik,
   Ablauf, Ergebnisse, Kosten + Fachwortverzeichnis
 - `docs/abstract.md` — Abstract (eine Seite)
-- `docs/praesentation.pptx` — Kurzpräsentation (Idee, Anpassungen, Kosten)
+- `docs/praesentation.html` — Kurzpräsentation als selbsttragende HTML-Datei
+  (Pfeiltasten blättern, P drucken)
 - `outputs/token_kosten.xlsx` — Token-/Kostenaufstellung, Projektion, Budget
 - `docs/charts/` — Diagramme der Präsentation und des Berichts
 - technische Einzeldokumente: `docs/design.md`, `docs/limits.md`,
