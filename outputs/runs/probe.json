@@ -1,0 +1,44 @@
+{
+  "image_id": "418185599_HR",
+  "n_catalog": 824,
+  "results": [
+    {
+      "probe": "1 Kachel / 1 Frage",
+      "n_tiles": 1,
+      "n_questions": 1,
+      "input_tokens": 6665,
+      "usd": 0.00028,
+      "sec": 0.4,
+      "tok_per_tile": 6665.0,
+      "tok_per_question": 6665.0,
+      "n_answered": 1,
+      "p_yes_first10": [
+        0.24
+      ]
+    },
+    {
+      "probe": "1 Kachel / 50 Fragen",
+      "n_tiles": 1,
+      "n_questions": 50,
+      "error": "HTTP 400: {\"detail\":{\"error_type\":\"max_tokens_exceeded\"}}"
+    },
+    {
+      "probe": "1 Kachel / voller Katalog",
+      "n_tiles": 1,
+      "n_questions": 824,
+      "error": "HTTP 413: {\"detail\":{\"error_type\":\"api_usage_error\",\"message\":\"Request exceeds size limits.\"}}"
+    },
+    {
+      "probe": "19 Kacheln / 10 Fragen",
+      "n_tiles": 19,
+      "n_questions": 10,
+      "error": "HTTP 413: {\"detail\":{\"error_type\":\"api_usage_error\",\"message\":\"Request exceeds size limits.\"}}"
+    },
+    {
+      "probe": "19 Kacheln / voller Katalog",
+      "n_tiles": 19,
+      "n_questions": 824,
+      "error": "HTTP 413: {\"detail\":{\"error_type\":\"api_usage_error\",\"message\":\"Request exceeds size limits.\"}}"
+    }
+  ]
+}

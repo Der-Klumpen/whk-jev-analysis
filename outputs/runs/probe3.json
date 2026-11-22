@@ -1,0 +1,90 @@
+[
+ {
+  "probe": "A tiny 1 Kachel + 5 Fragen",
+  "tiles": 1,
+  "q": 5,
+  "mb": 0.03,
+  "ok": true,
+  "tokens": 1979
+ },
+ {
+  "probe": "A tiny 1 Kachel + 10 Fragen",
+  "tiles": 1,
+  "q": 10,
+  "mb": 0.03,
+  "ok": true,
+  "tokens": 3689
+ },
+ {
+  "probe": "A tiny 1 Kachel + 15 Fragen",
+  "tiles": 1,
+  "q": 15,
+  "mb": 0.04,
+  "ok": true,
+  "tokens": 5411
+ },
+ {
+  "probe": "A tiny 1 Kachel + 20 Fragen",
+  "tiles": 1,
+  "q": 20,
+  "mb": 0.04,
+  "ok": true,
+  "tokens": 7181
+ },
+ {
+  "probe": "A tiny 1 Kachel + 30 Fragen",
+  "tiles": 1,
+  "q": 30,
+  "mb": 0.04,
+  "ok": true,
+  "tokens": 10658
+ },
+ {
+  "probe": "B 6 Kacheln + 1 Frage",
+  "tiles": 6,
+  "q": 1,
+  "mb": 2.07,
+  "ok": true,
+  "tokens": 24621
+ },
+ {
+  "probe": "B 10 Kacheln + 1 Frage",
+  "tiles": 10,
+  "q": 1,
+  "mb": 3.54,
+  "ok": false,
+  "err": "HTTP 400: {\"detail\":{\"error_type\":\"max_tokens_exceeded\"}}"
+ },
+ {
+  "probe": "B 14 Kacheln + 1 Frage",
+  "tiles": 14,
+  "q": 1,
+  "mb": 4.89,
+  "ok": false,
+  "err": "HTTP 400: {\"detail\":{\"error_type\":\"max_tokens_exceeded\"}}"
+ },
+ {
+  "probe": "B 18 Kacheln + 1 Frage",
+  "tiles": 18,
+  "q": 1,
+  "mb": 6.25,
+  "ok": false,
+  "err": "HTTP 400: {\"detail\":{\"error_type\":\"max_tokens_exceeded\"}}"
+ },
+ {
+  "probe": "C 12 Kacheln 800x500 + 5 Fragen",
+  "tiles": 12,
+  "q": 5,
+  "mb": 1.36,
+  "ok": false,
+  "err": "HTTP 400: {\"detail\":{\"error_type\":\"max_tokens_exceeded\"}}"
+ },
+ {
+  "probe": "C 12 Kacheln 800x500 + 10 Fragen",
+  "tiles": 12,
+  "q": 10,
+  "mb": 1.37,
+  "ok": false,
+  "err": "HTTP 400: {\"detail\":{\"error_type\":\"max_tokens_exceeded\"}}"
+ }
+]

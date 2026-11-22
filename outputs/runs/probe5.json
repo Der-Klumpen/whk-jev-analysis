@@ -1,0 +1,30 @@
+[
+ {
+  "probe": "minimal tiny + 30 Fragen",
+  "tiles": 1,
+  "q": 30,
+  "ok": false,
+  "err": "HTTP 400: {\"detail\":{\"error_type\":\"api_usage_error\",\"message\":\"Invalid image request.\"}}"
+ },
+ {
+  "probe": "minimal tiny + 100 Fragen",
+  "tiles": 1,
+  "q": 100,
+  "ok": false,
+  "err": "HTTP 400: {\"detail\":{\"error_type\":\"api_usage_error\",\"message\":\"Invalid image request.\"}}"
+ },
+ {
+  "probe": "minimal 6 tiny + 1 Frage",
+  "tiles": 6,
+  "q": 1,
+  "ok": false,
+  "err": "HTTP 400: {\"detail\":{\"error_type\":\"api_usage_error\",\"message\":\"Invalid image request.\"}}"
+ },
+ {
+  "probe": "minimal 1 echte VW-Kachel + 100 Fragen",
+  "tiles": 1,
+  "q": 100,
+  "ok": false,
+  "err": "HTTP 400: {\"detail\":{\"error_type\":\"api_usage_error\",\"message\":\"Invalid image request.\"}}"
+ }
+]

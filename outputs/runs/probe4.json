@@ -1,0 +1,51 @@
+[
+ {
+  "probe": "A short tiny + 30 Fragen",
+  "tiles": 1,
+  "q": 30,
+  "mb": 0.04,
+  "ok": true,
+  "tokens": 9760,
+  "tok_per_q": 325.3
+ },
+ {
+  "probe": "B short 7 tiny + 1 Frage",
+  "tiles": 7,
+  "q": 1,
+  "mb": 0.21,
+  "ok": false,
+  "err": "HTTP 400: {\"detail\":{\"error_type\":\"api_usage_error\",\"message\":\"Invalid image req"
+ },
+ {
+  "probe": "B short 8 tiny + 1 Frage",
+  "tiles": 8,
+  "q": 1,
+  "mb": 0.24,
+  "ok": false,
+  "err": "HTTP 400: {\"detail\":{\"error_type\":\"api_usage_error\",\"message\":\"Invalid image req"
+ },
+ {
+  "probe": "B short 9 tiny + 1 Frage",
+  "tiles": 9,
+  "q": 1,
+  "mb": 0.27,
+  "ok": false,
+  "err": "HTTP 400: {\"detail\":{\"error_type\":\"api_usage_error\",\"message\":\"Invalid image req"
+ },
+ {
+  "probe": "C short 1 echte VW-Kachel + 100 Fragen",
+  "tiles": 1,
+  "q": 100,
+  "mb": 0.26,
+  "ok": false,
+  "err": "HTTP 400: {\"detail\":{\"error_type\":\"max_tokens_exceeded\"}}"
+ },
+ {
+  "probe": "D short 1 echte VW-Kachel + voller Katalog",
+  "tiles": 1,
+  "q": 824,
+  "mb": 0.44,
+  "ok": false,
+  "err": "HTTP 413: {\"detail\":{\"error_type\":\"api_usage_error\",\"message\":\"Request exceeds s"
+ }
+]

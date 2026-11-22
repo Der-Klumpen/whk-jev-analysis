@@ -1,0 +1,8 @@
+# generierte Kacheln / Vorschauen (Skripte bauen sie reproduzierbar neu)
+outputs/tiles/
+outputs/previews/
+outputs/tiles/_probe_cache/
+__pycache__/
+*.pyc
+# Ledger ist maschinenlokal
+outputs/runs/ledger.json

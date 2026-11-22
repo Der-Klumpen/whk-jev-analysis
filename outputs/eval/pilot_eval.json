@@ -1,0 +1,869 @@
+{
+ "meta": {
+  "run": "outputs/runs/pilot.jsonl",
+  "questions_answerable": 1648,
+  "catalog": 824,
+  "images": 2
+ },
+ "results": {
+  "run": "outputs/runs/pilot.jsonl",
+  "overall": {
+   "slice": "alle",
+   "n": 1648,
+   "tp": 14,
+   "fp": 87,
+   "fn": 8,
+   "tn": 1539,
+   "acc": 0.9424,
+   "precision": 0.1386,
+   "recall": 0.6364,
+   "f1": 0.2276,
+   "ece": 0.1031,
+   "unanswered": 0
+  },
+  "overall_loose": {
+   "slice": "alle (containment-tolerantes GT)",
+   "n": 1648,
+   "tp": 71,
+   "fp": 30,
+   "fn": 25,
+   "tn": 1522,
+   "acc": 0.9666,
+   "precision": 0.703,
+   "recall": 0.7396,
+   "f1": 0.7208,
+   "ece": 0.0582,
+   "unanswered": 0
+  },
+  "by_group": [
+   {
+    "slice": "VW",
+    "n": 824,
+    "tp": 11,
+    "fp": 62,
+    "fn": 2,
+    "tn": 749,
+    "acc": 0.9223,
+    "precision": 0.1507,
+    "recall": 0.8462,
+    "f1": 0.2558,
+    "ece": 0.1685,
+    "unanswered": 0
+   },
+   {
+    "slice": "4W",
+    "n": 824,
+    "tp": 3,
+    "fp": 25,
+    "fn": 6,
+    "tn": 790,
+    "acc": 0.9624,
+    "precision": 0.1071,
+    "recall": 0.3333,
+    "f1": 0.1622,
+    "ece": 0.0377,
+    "unanswered": 0
+   }
+  ],
+  "by_group_loose": [
+   {
+    "slice": "VW",
+    "n": 824,
+    "tp": 52,
+    "fp": 21,
+    "fn": 11,
+    "tn": 740,
+    "acc": 0.9612,
+    "precision": 0.7123,
+    "recall": 0.8254,
+    "f1": 0.7647,
+    "ece": 0.1078,
+    "unanswered": 0
+   },
+   {
+    "slice": "4W",
+    "n": 824,
+    "tp": 19,
+    "fp": 9,
+    "fn": 14,
+    "tn": 782,
+    "acc": 0.9721,
+    "precision": 0.6786,
+    "recall": 0.5758,
+    "f1": 0.623,
+    "ece": 0.0194,
+    "unanswered": 0
+   }
+  ],
+  "by_item_len": [
+   {
+    "slice": "Länge 1 Zeichen",
+    "n": 4,
+    "tp": 1,
+    "fp": 2,
+    "fn": 0,
+    "tn": 1,
+    "acc": 0.5,
+    "precision": 0.3333,
+    "recall": 1.0,
+    "f1": 0.5,
+    "ece": 0.535,
+    "unanswered": 0
+   },
+   {
+    "slice": "Länge mehr",
+    "n": 1644,
+    "tp": 13,
+    "fp": 85,
+    "fn": 8,
+    "tn": 1538,
+    "acc": 0.9434,
+    "precision": 0.1327,
+    "recall": 0.619,
+    "f1": 0.2185,
+    "ece": 0.1022,
+    "unanswered": 0
+   }
+  ],
+  "by_freq": [
+   {
+    "slice": "1-10 Bilder",
+    "n": 1466,
+    "tp": 3,
+    "fp": 79,
+    "fn": 3,
+    "tn": 1381,
+    "acc": 0.9441,
+    "precision": 0.0366,
+    "recall": 0.5,
+    "f1": 0.0682,
+    "ece": 0.1069,
+    "unanswered": 0
+   },
+   {
+    "slice": "11-50",
+    "n": 132,
+    "tp": 1,
+    "fp": 4,
+    "fn": 0,
+    "tn": 127,
+    "acc": 0.9697,
+    "precision": 0.2,
+    "recall": 1.0,
+    "f1": 0.3333,
+    "ece": 0.0936,
+    "unanswered": 0
+   },
+   {
+    "slice": ">50 Bilder (item präsent)",
+    "n": 50,
+    "tp": 10,
+    "fp": 4,
+    "fn": 5,
+    "tn": 31,
+    "acc": 0.82,
+    "precision": 0.7143,
+    "recall": 0.6667,
+    "f1": 0.6897,
+    "ece": 0.1722,
+    "unanswered": 0
+   }
+  ],
+  "by_edge": [
+   {
+    "slice": "Randfragment (pos)",
+    "n": 2,
+    "tp": 2,
+    "fp": 0,
+    "fn": 0,
+    "tn": 0,
+    "acc": 1.0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0,
+    "ece": 0.025,
+    "unanswered": 0
+   },
+   {
+    "slice": "kein Rand",
+    "n": 1646,
+    "tp": 12,
+    "fp": 87,
+    "fn": 8,
+    "tn": 1539,
+    "acc": 0.9423,
+    "precision": 0.1212,
+    "recall": 0.6,
+    "f1": 0.2017,
+    "ece": 0.1033,
+    "unanswered": 0
+   }
+  ]
+ },
+ "top_fp": [
+  [
+   "ELIN",
+   2
+  ],
+  [
+   "tal",
+   2
+  ],
+  [
+   "215",
+   2
+  ],
+  [
+   "EXTR",
+   2
+  ],
+  [
+   "TUR",
+   2
+  ],
+  [
+   "6",
+   1
+  ],
+  [
+   "Performance",
+   1
+  ],
+  [
+   "92H",
+   1
+  ],
+  [
+   "R16",
+   1
+  ],
+  [
+   "98H",
+   1
+  ],
+  [
+   "60",
+   1
+  ],
+  [
+   "96H",
+   1
+  ],
+  [
+   "MICHE",
+   1
+  ],
+  [
+   "CHELIN",
+   1
+  ],
+  [
+   "ental",
+   1
+  ],
+  [
+   "0R16",
+   1
+  ],
+  [
+   "16",
+   1
+  ],
+  [
+   "ance",
+   1
+  ],
+  [
+   "HELIN",
+   1
+  ],
+  [
+   "ION",
+   1
+  ],
+  [
+   "LIN",
+   1
+  ],
+  [
+   "MI",
+   1
+  ],
+  [
+   "MIC",
+   1
+  ],
+  [
+   "MICH",
+   1
+  ],
+  [
+   "TATION",
+   1
+  ]
+ ],
+ "top_fn": [
+  [
+   "M+S",
+   1
+  ],
+  [
+   "ROTATION",
+   1
+  ],
+  [
+   "EXTRA LOAD",
+   1
+  ],
+  [
+   "EXTRA",
+   1
+  ],
+  [
+   "215/60R16",
+   1
+  ],
+  [
+   "ALPIN6",
+   1
+  ],
+  [
+   "B-SEAL",
+   1
+  ],
+  [
+   "0212512 S2WR2",
+   1
+  ]
+ ],
+ "worst_items": [
+  {
+   "slice": "EXTRA LOAD",
+   "n": 2,
+   "tp": 0,
+   "fp": 1,
+   "fn": 1,
+   "tn": 0,
+   "acc": 0.0,
+   "precision": 0.0,
+   "recall": 0.0,
+   "f1": null,
+   "ece": 1.0,
+   "unanswered": 0,
+   "gt_count": 118
+  },
+  {
+   "slice": "EXTRA",
+   "n": 2,
+   "tp": 0,
+   "fp": 1,
+   "fn": 1,
+   "tn": 0,
+   "acc": 0.0,
+   "precision": 0.0,
+   "recall": 0.0,
+   "f1": null,
+   "ece": 0.98,
+   "unanswered": 0,
+   "gt_count": 10
+  },
+  {
+   "slice": "ELIN",
+   "n": 2,
+   "tp": 0,
+   "fp": 2,
+   "fn": 0,
+   "tn": 0,
+   "acc": 0.0,
+   "precision": 0.0,
+   "recall": null,
+   "f1": null,
+   "ece": 0.76,
+   "unanswered": 0,
+   "gt_count": 2
+  },
+  {
+   "slice": "tal",
+   "n": 2,
+   "tp": 0,
+   "fp": 2,
+   "fn": 0,
+   "tn": 0,
+   "acc": 0.0,
+   "precision": 0.0,
+   "recall": null,
+   "f1": null,
+   "ece": 0.765,
+   "unanswered": 0,
+   "gt_count": 2
+  },
+  {
+   "slice": "215",
+   "n": 2,
+   "tp": 0,
+   "fp": 2,
+   "fn": 0,
+   "tn": 0,
+   "acc": 0.0,
+   "precision": 0.0,
+   "recall": null,
+   "f1": null,
+   "ece": 1.0,
+   "unanswered": 0,
+   "gt_count": 1
+  },
+  {
+   "slice": "EXTR",
+   "n": 2,
+   "tp": 0,
+   "fp": 2,
+   "fn": 0,
+   "tn": 0,
+   "acc": 0.0,
+   "precision": 0.0,
+   "recall": null,
+   "f1": null,
+   "ece": 0.975,
+   "unanswered": 0,
+   "gt_count": 1
+  },
+  {
+   "slice": "TUR",
+   "n": 2,
+   "tp": 0,
+   "fp": 2,
+   "fn": 0,
+   "tn": 0,
+   "acc": 0.0,
+   "precision": 0.0,
+   "recall": null,
+   "f1": null,
+   "ece": 0.94,
+   "unanswered": 0,
+   "gt_count": 1
+  },
+  {
+   "slice": "M+S",
+   "n": 2,
+   "tp": 0,
+   "fp": 0,
+   "fn": 1,
+   "tn": 1,
+   "acc": 0.5,
+   "precision": null,
+   "recall": 0.0,
+   "f1": null,
+   "ece": 0.61,
+   "unanswered": 0,
+   "gt_count": 435
+  },
+  {
+   "slice": "ROTATION",
+   "n": 2,
+   "tp": 0,
+   "fp": 0,
+   "fn": 1,
+   "tn": 1,
+   "acc": 0.5,
+   "precision": null,
+   "recall": 0.0,
+   "f1": null,
+   "ece": 0.585,
+   "unanswered": 0,
+   "gt_count": 276
+  },
+  {
+   "slice": "MO",
+   "n": 2,
+   "tp": 0,
+   "fp": 1,
+   "fn": 0,
+   "tn": 1,
+   "acc": 0.5,
+   "precision": 0.0,
+   "recall": null,
+   "f1": null,
+   "ece": 0.4,
+   "unanswered": 0,
+   "gt_count": 206
+  },
+  {
+   "slice": "B-SEAL",
+   "n": 2,
+   "tp": 0,
+   "fp": 0,
+   "fn": 1,
+   "tn": 1,
+   "acc": 0.5,
+   "precision": null,
+   "recall": 0.0,
+   "f1": null,
+   "ece": 0.265,
+   "unanswered": 0,
+   "gt_count": 124
+  },
+  {
+   "slice": "6",
+   "n": 2,
+   "tp": 1,
+   "fp": 1,
+   "fn": 0,
+   "tn": 0,
+   "acc": 0.5,
+   "precision": 0.5,
+   "recall": 1.0,
+   "f1": 0.6667,
+   "ece": 0.565,
+   "unanswered": 0,
+   "gt_count": 109
+  },
+  {
+   "slice": "0212512 S2WR2",
+   "n": 2,
+   "tp": 0,
+   "fp": 0,
+   "fn": 1,
+   "tn": 1,
+   "acc": 0.5,
+   "precision": null,
+   "recall": 0.0,
+   "f1": null,
+   "ece": 0.42,
+   "unanswered": 0,
+   "gt_count": 77
+  },
+  {
+   "slice": "SNOW",
+   "n": 2,
+   "tp": 0,
+   "fp": 1,
+   "fn": 0,
+   "tn": 1,
+   "acc": 0.5,
+   "precision": 0.0,
+   "recall": null,
+   "f1": null,
+   "ece": 0.3,
+   "unanswered": 0,
+   "gt_count": 52
+  },
+  {
+   "slice": "GOOD",
+   "n": 2,
+   "tp": 0,
+   "fp": 1,
+   "fn": 0,
+   "tn": 1,
+   "acc": 0.5,
+   "precision": 0.0,
+   "recall": null,
+   "f1": null,
+   "ece": 0.375,
+   "unanswered": 0,
+   "gt_count": 45
+  },
+  {
+   "slice": "Performance",
+   "n": 2,
+   "tp": 0,
+   "fp": 1,
+   "fn": 0,
+   "tn": 1,
+   "acc": 0.5,
+   "precision": 0.0,
+   "recall": null,
+   "f1": null,
+   "ece": 0.55,
+   "unanswered": 0,
+   "gt_count": 43
+  },
+  {
+   "slice": "Seal",
+   "n": 2,
+   "tp": 0,
+   "fp": 1,
+   "fn": 0,
+   "tn": 1,
+   "acc": 0.5,
+   "precision": 0.0,
+   "recall": null,
+   "f1": null,
+   "ece": 0.32,
+   "unanswered": 0,
+   "gt_count": 40
+  },
+  {
+   "slice": "92H",
+   "n": 2,
+   "tp": 0,
+   "fp": 1,
+   "fn": 0,
+   "tn": 1,
+   "acc": 0.5,
+   "precision": 0.0,
+   "recall": null,
+   "f1": null,
+   "ece": 0.475,
+   "unanswered": 0,
+   "gt_count": 19
+  },
+  {
+   "slice": "R16",
+   "n": 2,
+   "tp": 0,
+   "fp": 1,
+   "fn": 0,
+   "tn": 1,
+   "acc": 0.5,
+   "precision": 0.0,
+   "recall": null,
+   "f1": null,
+   "ece": 0.475,
+   "unanswered": 0,
+   "gt_count": 10
+  },
+  {
+   "slice": "98H",
+   "n": 2,
+   "tp": 0,
+   "fp": 1,
+   "fn": 0,
+   "tn": 1,
+   "acc": 0.5,
+   "precision": 0.0,
+   "recall": null,
+   "f1": null,
+   "ece": 0.53,
+   "unanswered": 0,
+   "gt_count": 9
+  },
+  {
+   "slice": "1VR 100HXE",
+   "n": 2,
+   "tp": 0,
+   "fp": 1,
+   "fn": 0,
+   "tn": 1,
+   "acc": 0.5,
+   "precision": 0.0,
+   "recall": null,
+   "f1": null,
+   "ece": 0.475,
+   "unanswered": 0,
+   "gt_count": 8
+  },
+  {
+   "slice": "BRIDGES",
+   "n": 2,
+   "tp": 0,
+   "fp": 1,
+   "fn": 0,
+   "tn": 1,
+   "acc": 0.5,
+   "precision": 0.0,
+   "recall": null,
+   "f1": null,
+   "ece": 0.47,
+   "unanswered": 0,
+   "gt_count": 8
+  },
+  {
+   "slice": "ESTONE",
+   "n": 2,
+   "tp": 0,
+   "fp": 1,
+   "fn": 0,
+   "tn": 1,
+   "acc": 0.5,
+   "precision": 0.0,
+   "recall": null,
+   "f1": null,
+   "ece": 0.485,
+   "unanswered": 0,
+   "gt_count": 8
+  },
+  {
+   "slice": "LOAD",
+   "n": 2,
+   "tp": 0,
+   "fp": 1,
+   "fn": 0,
+   "tn": 1,
+   "acc": 0.5,
+   "precision": 0.0,
+   "recall": null,
+   "f1": null,
+   "ece": 0.51,
+   "unanswered": 0,
+   "gt_count": 8
+  },
+  {
+   "slice": "BRIDGEST",
+   "n": 2,
+   "tp": 0,
+   "fp": 1,
+   "fn": 0,
+   "tn": 1,
+   "acc": 0.5,
+   "precision": 0.0,
+   "recall": null,
+   "f1": null,
+   "ece": 0.49,
+   "unanswered": 0,
+   "gt_count": 7
+  }
+ ],
+ "best_items": [
+  {
+   "slice": "XT X2 Y848",
+   "n": 2,
+   "tp": 0,
+   "fp": 0,
+   "fn": 0,
+   "tn": 2,
+   "acc": 1.0,
+   "precision": null,
+   "recall": null,
+   "f1": null,
+   "ece": 0.06,
+   "unanswered": 0,
+   "gt_count": 1
+  },
+  {
+   "slice": "XT VR K644 3612",
+   "n": 2,
+   "tp": 0,
+   "fp": 0,
+   "fn": 0,
+   "tn": 2,
+   "acc": 1.0,
+   "precision": null,
+   "recall": null,
+   "f1": null,
+   "ece": 0.06,
+   "unanswered": 0,
+   "gt_count": 1
+  },
+  {
+   "slice": "XT UN W136 2621",
+   "n": 2,
+   "tp": 0,
+   "fp": 0,
+   "fn": 0,
+   "tn": 2,
+   "acc": 1.0,
+   "precision": null,
+   "recall": null,
+   "f1": null,
+   "ece": 0.08,
+   "unanswered": 0,
+   "gt_count": 1
+  },
+  {
+   "slice": "XT UN W136 0621",
+   "n": 2,
+   "tp": 0,
+   "fp": 0,
+   "fn": 0,
+   "tn": 2,
+   "acc": 1.0,
+   "precision": null,
+   "recall": null,
+   "f1": null,
+   "ece": 0.05,
+   "unanswered": 0,
+   "gt_count": 1
+  },
+  {
+   "slice": "XT UN W136",
+   "n": 2,
+   "tp": 0,
+   "fp": 0,
+   "fn": 0,
+   "tn": 2,
+   "acc": 1.0,
+   "precision": null,
+   "recall": null,
+   "f1": null,
+   "ece": 0.065,
+   "unanswered": 0,
+   "gt_count": 1
+  },
+  {
+   "slice": "XT 93 T853 4516",
+   "n": 2,
+   "tp": 0,
+   "fp": 0,
+   "fn": 0,
+   "tn": 2,
+   "acc": 1.0,
+   "precision": null,
+   "recall": null,
+   "f1": null,
+   "ece": 0.04,
+   "unanswered": 0,
+   "gt_count": 1
+  },
+  {
+   "slice": "XT 93 T853 4119",
+   "n": 2,
+   "tp": 0,
+   "fp": 0,
+   "fn": 0,
+   "tn": 2,
+   "acc": 1.0,
+   "precision": null,
+   "recall": null,
+   "f1": null,
+   "ece": 0.03,
+   "unanswered": 0,
+   "gt_count": 1
+  },
+  {
+   "slice": "XT 4J T797 2818",
+   "n": 2,
+   "tp": 0,
+   "fp": 0,
+   "fn": 0,
+   "tn": 2,
+   "acc": 1.0,
+   "precision": null,
+   "recall": null,
+   "f1": null,
+   "ece": 0.02,
+   "unanswered": 0,
+   "gt_count": 1
+  },
+  {
+   "slice": "XT 42 K655 3120",
+   "n": 2,
+   "tp": 0,
+   "fp": 0,
+   "fn": 0,
+   "tn": 2,
+   "acc": 1.0,
+   "precision": null,
+   "recall": null,
+   "f1": null,
+   "ece": 0.05,
+   "unanswered": 0,
+   "gt_count": 1
+  },
+  {
+   "slice": "XN K3 T900 3717",
+   "n": 2,
+   "tp": 0,
+   "fp": 0,
+   "fn": 0,
+   "tn": 2,
+   "acc": 1.0,
+   "precision": null,
+   "recall": null,
+   "f1": null,
+   "ece": 0.015,
+   "unanswered": 0,
+   "gt_count": 1
+  }
+ ],
+ "rows": 1648
+}

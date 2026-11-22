@@ -1,0 +1,9 @@
+{
+  "run": "pilot",
+  "images": 1,
+  "answers": 4944,
+  "cost_usd": 0.6144,
+  "cum_usd": 0.7388,
+  "sec": 35.4,
+  "out": "/home/iiot/data/jev-analysis/outputs/runs/pilot.jsonl"
+}
