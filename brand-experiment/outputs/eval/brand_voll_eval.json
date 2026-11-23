@@ -1,0 +1,2186 @@
+{
+ "uebersicht": {
+  "any_tile": {
+   "n": 100,
+   "richtig": 92,
+   "acc": 0.92
+  },
+  "mehrheit": {
+   "n": 100,
+   "richtig": 86,
+   "acc": 0.86
+  },
+  "mittel_p": {
+   "n": 100,
+   "richtig": 91,
+   "acc": 0.91
+  },
+  "uneins_anteil": 0.38,
+  "ece_p_gt_mean": 0.1687,
+  "kachelgruppen": 332,
+  "kosten_usd": 0.1113
+ },
+ "je_marke": {
+  "Bridgestone": {
+   "n": 33,
+   "any": 1.0,
+   "mehrheit": 1.0,
+   "mittel_p": 1.0,
+   "uneins": 18
+  },
+  "Continental": {
+   "n": 24,
+   "any": 1.0,
+   "mehrheit": 0.833,
+   "mittel_p": 0.958,
+   "uneins": 7
+  },
+  "Dunlop": {
+   "n": 4,
+   "any": 1.0,
+   "mehrheit": 0.75,
+   "mittel_p": 1.0,
+   "uneins": 2
+  },
+  "Falken": {
+   "n": 1,
+   "any": 1.0,
+   "mehrheit": 1.0,
+   "mittel_p": 1.0,
+   "uneins": 0
+  },
+  "Firestone": {
+   "n": 1,
+   "any": 1.0,
+   "mehrheit": 1.0,
+   "mittel_p": 1.0,
+   "uneins": 0
+  },
+  "Fulda": {
+   "n": 1,
+   "any": 1.0,
+   "mehrheit": 1.0,
+   "mittel_p": 1.0,
+   "uneins": 0
+  },
+  "Hankook": {
+   "n": 4,
+   "any": 1.0,
+   "mehrheit": 1.0,
+   "mittel_p": 1.0,
+   "uneins": 0
+  },
+  "Kleber": {
+   "n": 1,
+   "any": 1.0,
+   "mehrheit": 1.0,
+   "mittel_p": 1.0,
+   "uneins": 0
+  },
+  "Kumho": {
+   "n": 1,
+   "any": 1.0,
+   "mehrheit": 1.0,
+   "mittel_p": 1.0,
+   "uneins": 0
+  },
+  "Michelin": {
+   "n": 10,
+   "any": 1.0,
+   "mehrheit": 1.0,
+   "mittel_p": 1.0,
+   "uneins": 0
+  },
+  "Nokian": {
+   "n": 1,
+   "any": 1.0,
+   "mehrheit": 0.0,
+   "mittel_p": 1.0,
+   "uneins": 1
+  },
+  "Ohne erkennbare Marke": {
+   "n": 8,
+   "any": 0.0,
+   "mehrheit": 0.0,
+   "mittel_p": 0.0,
+   "uneins": 8
+  },
+  "Pirelli": {
+   "n": 9,
+   "any": 1.0,
+   "mehrheit": 1.0,
+   "mittel_p": 1.0,
+   "uneins": 1
+  },
+  "Semperit": {
+   "n": 1,
+   "any": 1.0,
+   "mehrheit": 1.0,
+   "mittel_p": 1.0,
+   "uneins": 0
+  },
+  "Vredestein": {
+   "n": 1,
+   "any": 1.0,
+   "mehrheit": 1.0,
+   "mittel_p": 1.0,
+   "uneins": 1
+  }
+ },
+ "verwechslungen_any": [
+  {
+   "gt": "Ohne erkennbare Marke",
+   "stattdessen": "Dunlop",
+   "n": 3
+  },
+  {
+   "gt": "Ohne erkennbare Marke",
+   "stattdessen": "Firestone",
+   "n": 2
+  },
+  {
+   "gt": "Ohne erkennbare Marke",
+   "stattdessen": "Continental",
+   "n": 2
+  },
+  {
+   "gt": "Ohne erkennbare Marke",
+   "stattdessen": "Nokian",
+   "n": 1
+  }
+ ],
+ "einzeln": [
+  {
+   "image_id": "0a2b3b5851044d17bc2d9de36b642558_preprocessed_unwrapped_40412419_train",
+   "gt": "Continental",
+   "n_gruppen": 5,
+   "stimmen": [
+    "Continental",
+    "Continental",
+    "Continental",
+    "Continental",
+    "Continental"
+   ],
+   "any_richtig": true,
+   "any_choice": "Continental",
+   "mehrheit": "Continental",
+   "mehrheit_richtig": true,
+   "uneins": false,
+   "mittel_p_best": "Continental",
+   "mittel_p_richtig": true,
+   "p_gt_max": 1.0,
+   "p_gt_mean": 0.914,
+   "kosten": 0.00155841
+  },
+  {
+   "image_id": "0a3295eedf4645d7b18b482f1ed1f342_preprocessed_unwrapped_QA0170090050_train",
+   "gt": "Bridgestone",
+   "n_gruppen": 4,
+   "stimmen": [
+    "Bridgestone",
+    "Bridgestone",
+    "Bridgestone",
+    "Bridgestone"
+   ],
+   "any_richtig": true,
+   "any_choice": "Bridgestone",
+   "mehrheit": "Bridgestone",
+   "mehrheit_richtig": true,
+   "uneins": false,
+   "mittel_p_best": "Bridgestone",
+   "mittel_p_richtig": true,
+   "p_gt_max": 1.0,
+   "p_gt_mean": 0.9875,
+   "kosten": 0.00154119
+  },
+  {
+   "image_id": "0b32ac3507fa42f388b974bc28c85722_preprocessed_unwrapped_40412419_train",
+   "gt": "Bridgestone",
+   "n_gruppen": 5,
+   "stimmen": [
+    "Bridgestone",
+    "Semperit",
+    "Bridgestone",
+    "Bridgestone",
+    "Bridgestone"
+   ],
+   "any_richtig": true,
+   "any_choice": "Bridgestone",
+   "mehrheit": "Bridgestone",
+   "mehrheit_richtig": true,
+   "uneins": true,
+   "mittel_p_best": "Bridgestone",
+   "mittel_p_richtig": true,
+   "p_gt_max": 1.0,
+   "p_gt_mean": 0.806,
+   "kosten": 0.00176799
+  },
+  {
+   "image_id": "0c4ad8939d1b4fa19a7a0342c9157b04_preprocessed_unwrapped_40412419_train",
+   "gt": "Bridgestone",
+   "n_gruppen": 6,
+   "stimmen": [
+    "Bridgestone",
+    "Bridgestone",
+    "Michelin",
+    "Bridgestone",
+    "Semperit",
+    "Firestone"
+   ],
+   "any_richtig": true,
+   "any_choice": "Bridgestone",
+   "mehrheit": "Bridgestone",
+   "mehrheit_richtig": true,
+   "uneins": true,
+   "mittel_p_best": "Bridgestone",
+   "mittel_p_richtig": true,
+   "p_gt_max": 1.0,
+   "p_gt_mean": 0.4366666666666667,
+   "kosten": 0.0014511840000000001
+  },
+  {
+   "image_id": "15c68dbee06f43bfb1978901484bd939_preprocessed_unwrapped_QA0170090050_test",
+   "gt": "Continental",
+   "n_gruppen": 4,
+   "stimmen": [
+    "Continental",
+    "Continental",
+    "Continental",
+    "Continental"
+   ],
+   "any_richtig": true,
+   "any_choice": "Continental",
+   "mehrheit": "Continental",
+   "mehrheit_richtig": true,
+   "uneins": false,
+   "mittel_p_best": "Continental",
+   "mittel_p_richtig": true,
+   "p_gt_max": 1.0,
+   "p_gt_mean": 0.985,
+   "kosten": 0.0013732320000000003
+  },
+  {
+   "image_id": "2391bf403106442ebfc7dc50be25df4c_preprocessed_unwrapped_GBC23030035_train",
+   "gt": "Bridgestone",
+   "n_gruppen": 5,
+   "stimmen": [
+    "Bridgestone",
+    "Continental",
+    "Bridgestone",
+    "Pirelli",
+    "Bridgestone"
+   ],
+   "any_richtig": true,
+   "any_choice": "Bridgestone",
+   "mehrheit": "Bridgestone",
+   "mehrheit_richtig": true,
+   "uneins": true,
+   "mittel_p_best": "Bridgestone",
+   "mittel_p_richtig": true,
+   "p_gt_max": 1.0,
+   "p_gt_mean": 0.638,
+   "kosten": 0.00158046
+  },
+  {
+   "image_id": "23c850d3a493493ead65f24d3f929442_preprocessed_unwrapped_40412419_train",
+   "gt": "Continental",
+   "n_gruppen": 5,
+   "stimmen": [
+    "KEINE MARKE LESBAR",
+    "Continental",
+    "Continental",
+    "KEINE MARKE LESBAR",
+    "KEINE MARKE LESBAR"
+   ],
+   "any_richtig": true,
+   "any_choice": "Continental",
+   "mehrheit": "KEINE MARKE LESBAR",
+   "mehrheit_richtig": false,
+   "uneins": true,
+   "mittel_p_best": "Continental",
+   "mittel_p_richtig": true,
+   "p_gt_max": 1.0,
+   "p_gt_mean": 0.44400000000000006,
+   "kosten": 0.0012130440000000001
+  },
+  {
+   "image_id": "23e76dfd17ab4390a659bed76b2445ea_preprocessed_unwrapped_40412419_train",
+   "gt": "Continental",
+   "n_gruppen": 5,
+   "stimmen": [
+    "KEINE MARKE LESBAR",
+    "Continental",
+    "Continental",
+    "Continental",
+    "KEINE MARKE LESBAR"
+   ],
+   "any_richtig": true,
+   "any_choice": "Continental",
+   "mehrheit": "Continental",
+   "mehrheit_richtig": true,
+   "uneins": true,
+   "mittel_p_best": "Continental",
+   "mittel_p_richtig": true,
+   "p_gt_max": 1.0,
+   "p_gt_mean": 0.62,
+   "kosten": 0.00155841
+  },
+  {
+   "image_id": "23e76dfd17ab4390a659bed76b2445ea_preprocessed_unwrapped_GBC23030035_train",
+   "gt": "Continental",
+   "n_gruppen": 5,
+   "stimmen": [
+    "Continental",
+    "Continental",
+    "Continental",
+    "KEINE MARKE LESBAR",
+    "Continental"
+   ],
+   "any_richtig": true,
+   "any_choice": "Continental",
+   "mehrheit": "Continental",
+   "mehrheit_richtig": true,
+   "uneins": true,
+   "mittel_p_best": "Continental",
+   "mittel_p_richtig": true,
+   "p_gt_max": 1.0,
+   "p_gt_mean": 0.746,
+   "kosten": 0.001495746
+  },
+  {
+   "image_id": "2465abdac7944b56873205e1d22f6695_preprocessed_unwrapped_GBC23030035_train",
+   "gt": "Bridgestone",
+   "n_gruppen": 5,
+   "stimmen": [
+    "Bridgestone",
+    "Bridgestone",
+    "Bridgestone",
+    "Bridgestone",
+    "Bridgestone"
+   ],
+   "any_richtig": true,
+   "any_choice": "Bridgestone",
+   "mehrheit": "Bridgestone",
+   "mehrheit_richtig": true,
+   "uneins": false,
+   "mittel_p_best": "Bridgestone",
+   "mittel_p_richtig": true,
+   "p_gt_max": 1.0,
+   "p_gt_mean": 0.7979999999999999,
+   "kosten": 0.0013374060000000002
+  },
+  {
+   "image_id": "31d76a098baf4e60866dac2fcbd39dfe_preprocessed_unwrapped_GBC23030035_train",
+   "gt": "Bridgestone",
+   "n_gruppen": 5,
+   "stimmen": [
+    "Bridgestone",
+    "KEINE MARKE LESBAR",
+    "Bridgestone",
+    "Continental",
+    "Bridgestone"
+   ],
+   "any_richtig": true,
+   "any_choice": "Bridgestone",
+   "mehrheit": "Bridgestone",
+   "mehrheit_richtig": true,
+   "uneins": true,
+   "mittel_p_best": "Bridgestone",
+   "mittel_p_richtig": true,
+   "p_gt_max": 1.0,
+   "p_gt_mean": 0.62,
+   "kosten": 0.00137886
+  },
+  {
+   "image_id": "32882850be0e4c759b459ed77c44d741_preprocessed_unwrapped_QA0170090050_train",
+   "gt": "Bridgestone",
+   "n_gruppen": 4,
+   "stimmen": [
+    "Bridgestone",
+    "Bridgestone",
+    "Bridgestone",
+    "Bridgestone"
+   ],
+   "any_richtig": true,
+   "any_choice": "Bridgestone",
+   "mehrheit": "Bridgestone",
+   "mehrheit_richtig": true,
+   "uneins": false,
+   "mittel_p_best": "Bridgestone",
+   "mittel_p_richtig": true,
+   "p_gt_max": 1.0,
+   "p_gt_mean": 0.9975,
+   "kosten": 0.0011030880000000001
+  },
+  {
+   "image_id": "3f4c935741b94b8f8a0c1e755419f0be_preprocessed_unwrapped_40412419_train",
+   "gt": "Bridgestone",
+   "n_gruppen": 6,
+   "stimmen": [
+    "Bridgestone",
+    "KEINE MARKE LESBAR",
+    "Bridgestone",
+    "Fulda",
+    "Bridgestone",
+    "KEINE MARKE LESBAR"
+   ],
+   "any_richtig": true,
+   "any_choice": "Bridgestone",
+   "mehrheit": "Bridgestone",
+   "mehrheit_richtig": true,
+   "uneins": true,
+   "mittel_p_best": "Bridgestone",
+   "mittel_p_richtig": true,
+   "p_gt_max": 1.0,
+   "p_gt_mean": 0.5433333333333333,
+   "kosten": 0.0016232160000000002
+  },
+  {
+   "image_id": "416254659_HL",
+   "gt": "Hankook",
+   "n_gruppen": 2,
+   "stimmen": [
+    "Hankook",
+    "Hankook"
+   ],
+   "any_richtig": true,
+   "any_choice": "Hankook",
+   "mehrheit": "Hankook",
+   "mehrheit_richtig": true,
+   "uneins": false,
+   "mittel_p_best": "Hankook",
+   "mittel_p_richtig": true,
+   "p_gt_max": 1.0,
+   "p_gt_mean": 1.0,
+   "kosten": 0.0008134980000000001
+  },
+  {
+   "image_id": "417020424_VR",
+   "gt": "Vredestein",
+   "n_gruppen": 2,
+   "stimmen": [
+    "Vredestein",
+    "Pirelli"
+   ],
+   "any_richtig": true,
+   "any_choice": "Vredestein",
+   "mehrheit": "Vredestein",
+   "mehrheit_richtig": true,
+   "uneins": true,
+   "mittel_p_best": "Vredestein",
+   "mittel_p_richtig": true,
+   "p_gt_max": 1.0,
+   "p_gt_mean": 0.51,
+   "kosten": 0.0008134980000000001
+  },
+  {
+   "image_id": "417020828_HR",
+   "gt": "Pirelli",
+   "n_gruppen": 2,
+   "stimmen": [
+    "Pirelli",
+    "Pirelli"
+   ],
+   "any_richtig": true,
+   "any_choice": "Pirelli",
+   "mehrheit": "Pirelli",
+   "mehrheit_richtig": true,
+   "uneins": false,
+   "mittel_p_best": "Pirelli",
+   "mittel_p_richtig": true,
+   "p_gt_max": 1.0,
+   "p_gt_mean": 0.96,
+   "kosten": 0.0008134980000000001
+  },
+  {
+   "image_id": "417092603_VR",
+   "gt": "Pirelli",
+   "n_gruppen": 2,
+   "stimmen": [
+    "Pirelli",
+    "Nokian"
+   ],
+   "any_richtig": true,
+   "any_choice": "Pirelli",
+   "mehrheit": "Pirelli",
+   "mehrheit_richtig": true,
+   "uneins": true,
+   "mittel_p_best": "Pirelli",
+   "mittel_p_richtig": true,
+   "p_gt_max": 1.0,
+   "p_gt_mean": 0.515,
+   "kosten": 0.0008134980000000001
+  },
+  {
+   "image_id": "417093822_HL",
+   "gt": "Fulda",
+   "n_gruppen": 2,
+   "stimmen": [
+    "Fulda",
+    "Fulda"
+   ],
+   "any_richtig": true,
+   "any_choice": "Fulda",
+   "mehrheit": "Fulda",
+   "mehrheit_richtig": true,
+   "uneins": false,
+   "mittel_p_best": "Fulda",
+   "mittel_p_richtig": true,
+   "p_gt_max": 1.0,
+   "p_gt_mean": 1.0,
+   "kosten": 0.0008134980000000001
+  },
+  {
+   "image_id": "417093859_VL",
+   "gt": "Michelin",
+   "n_gruppen": 2,
+   "stimmen": [
+    "Michelin",
+    "Michelin"
+   ],
+   "any_richtig": true,
+   "any_choice": "Michelin",
+   "mehrheit": "Michelin",
+   "mehrheit_richtig": true,
+   "uneins": false,
+   "mittel_p_best": "Michelin",
+   "mittel_p_richtig": true,
+   "p_gt_max": 1.0,
+   "p_gt_mean": 1.0,
+   "kosten": 0.0008134980000000001
+  },
+  {
+   "image_id": "417093895_HR",
+   "gt": "Semperit",
+   "n_gruppen": 2,
+   "stimmen": [
+    "Semperit",
+    "Semperit"
+   ],
+   "any_richtig": true,
+   "any_choice": "Semperit",
+   "mehrheit": "Semperit",
+   "mehrheit_richtig": true,
+   "uneins": false,
+   "mittel_p_best": "Semperit",
+   "mittel_p_richtig": true,
+   "p_gt_max": 1.0,
+   "p_gt_mean": 1.0,
+   "kosten": 0.0008134980000000001
+  },
+  {
+   "image_id": "417207982_HL",
+   "gt": "Pirelli",
+   "n_gruppen": 2,
+   "stimmen": [
+    "Pirelli",
+    "Pirelli"
+   ],
+   "any_richtig": true,
+   "any_choice": "Pirelli",
+   "mehrheit": "Pirelli",
+   "mehrheit_richtig": true,
+   "uneins": false,
+   "mittel_p_best": "Pirelli",
+   "mittel_p_richtig": true,
+   "p_gt_max": 1.0,
+   "p_gt_mean": 1.0,
+   "kosten": 0.000921984
+  },
+  {
+   "image_id": "417207982_VL",
+   "gt": "Pirelli",
+   "n_gruppen": 2,
+   "stimmen": [
+    "Pirelli",
+    "Pirelli"
+   ],
+   "any_richtig": true,
+   "any_choice": "Pirelli",
+   "mehrheit": "Pirelli",
+   "mehrheit_richtig": true,
+   "uneins": false,
+   "mittel_p_best": "Pirelli",
+   "mittel_p_richtig": true,
+   "p_gt_max": 1.0,
+   "p_gt_mean": 0.995,
+   "kosten": 0.000921984
+  },
+  {
+   "image_id": "417282747_VL",
+   "gt": "Michelin",
+   "n_gruppen": 2,
+   "stimmen": [
+    "Michelin",
+    "Michelin"
+   ],
+   "any_richtig": true,
+   "any_choice": "Michelin",
+   "mehrheit": "Michelin",
+   "mehrheit_richtig": true,
+   "uneins": false,
+   "mittel_p_best": "Michelin",
+   "mittel_p_richtig": true,
+   "p_gt_max": 1.0,
+   "p_gt_mean": 0.995,
+   "kosten": 0.0008134980000000001
+  },
+  {
+   "image_id": "417545673_HR",
+   "gt": "Continental",
+   "n_gruppen": 2,
+   "stimmen": [
+    "Continental",
+    "Continental"
+   ],
+   "any_richtig": true,
+   "any_choice": "Continental",
+   "mehrheit": "Continental",
+   "mehrheit_richtig": true,
+   "uneins": false,
+   "mittel_p_best": "Continental",
+   "mittel_p_richtig": true,
+   "p_gt_max": 1.0,
+   "p_gt_mean": 1.0,
+   "kosten": 0.0008134980000000001
+  },
+  {
+   "image_id": "418185159_VR",
+   "gt": "Falken",
+   "n_gruppen": 2,
+   "stimmen": [
+    "Falken",
+    "Falken"
+   ],
+   "any_richtig": true,
+   "any_choice": "Falken",
+   "mehrheit": "Falken",
+   "mehrheit_richtig": true,
+   "uneins": false,
+   "mittel_p_best": "Falken",
+   "mittel_p_richtig": true,
+   "p_gt_max": 1.0,
+   "p_gt_mean": 0.735,
+   "kosten": 0.000921984
+  },
+  {
+   "image_id": "418185214_VL",
+   "gt": "Nokian",
+   "n_gruppen": 2,
+   "stimmen": [
+    "KEINE MARKE LESBAR",
+    "Nokian"
+   ],
+   "any_richtig": true,
+   "any_choice": "Nokian",
+   "mehrheit": "KEINE MARKE LESBAR",
+   "mehrheit_richtig": false,
+   "uneins": true,
+   "mittel_p_best": "Nokian",
+   "mittel_p_richtig": true,
+   "p_gt_max": 1.0,
+   "p_gt_mean": 0.545,
+   "kosten": 0.0008134980000000001
+  },
+  {
+   "image_id": "418185599_HR",
+   "gt": "Michelin",
+   "n_gruppen": 2,
+   "stimmen": [
+    "Michelin",
+    "Michelin"
+   ],
+   "any_richtig": true,
+   "any_choice": "Michelin",
+   "mehrheit": "Michelin",
+   "mehrheit_richtig": true,
+   "uneins": false,
+   "mittel_p_best": "Michelin",
+   "mittel_p_richtig": true,
+   "p_gt_max": 1.0,
+   "p_gt_mean": 1.0,
+   "kosten": 0.0008134980000000001
+  },
+  {
+   "image_id": "418483057_HR",
+   "gt": "Firestone",
+   "n_gruppen": 2,
+   "stimmen": [
+    "Firestone",
+    "Firestone"
+   ],
+   "any_richtig": true,
+   "any_choice": "Firestone",
+   "mehrheit": "Firestone",
+   "mehrheit_richtig": true,
+   "uneins": false,
+   "mittel_p_best": "Firestone",
+   "mittel_p_richtig": true,
+   "p_gt_max": 1.0,
+   "p_gt_mean": 0.6,
+   "kosten": 0.0008134980000000001
+  },
+  {
+   "image_id": "418483185_VR",
+   "gt": "Kumho",
+   "n_gruppen": 2,
+   "stimmen": [
+    "Kumho",
+    "Kumho"
+   ],
+   "any_richtig": true,
+   "any_choice": "Kumho",
+   "mehrheit": "Kumho",
+   "mehrheit_richtig": true,
+   "uneins": false,
+   "mittel_p_best": "Kumho",
+   "mittel_p_richtig": true,
+   "p_gt_max": 1.0,
+   "p_gt_mean": 1.0,
+   "kosten": 0.0008134980000000001
+  },
+  {
+   "image_id": "418483277_VR",
+   "gt": "Kleber",
+   "n_gruppen": 2,
+   "stimmen": [
+    "Kleber",
+    "Kleber"
+   ],
+   "any_richtig": true,
+   "any_choice": "Kleber",
+   "mehrheit": "Kleber",
+   "mehrheit_richtig": true,
+   "uneins": false,
+   "mittel_p_best": "Kleber",
+   "mittel_p_richtig": true,
+   "p_gt_max": 1.0,
+   "p_gt_mean": 1.0,
+   "kosten": 0.0008134980000000001
+  },
+  {
+   "image_id": "418483332_VL",
+   "gt": "Continental",
+   "n_gruppen": 2,
+   "stimmen": [
+    "Continental",
+    "Continental"
+   ],
+   "any_richtig": true,
+   "any_choice": "Continental",
+   "mehrheit": "Continental",
+   "mehrheit_richtig": true,
+   "uneins": false,
+   "mittel_p_best": "Continental",
+   "mittel_p_richtig": true,
+   "p_gt_max": 1.0,
+   "p_gt_mean": 0.99,
+   "kosten": 0.0008134980000000001
+  },
+  {
+   "image_id": "418483873_VR",
+   "gt": "Continental",
+   "n_gruppen": 2,
+   "stimmen": [
+    "Continental",
+    "Continental"
+   ],
+   "any_richtig": true,
+   "any_choice": "Continental",
+   "mehrheit": "Continental",
+   "mehrheit_richtig": true,
+   "uneins": false,
+   "mittel_p_best": "Continental",
+   "mittel_p_richtig": true,
+   "p_gt_max": 1.0,
+   "p_gt_mean": 0.995,
+   "kosten": 0.0008134980000000001
+  },
+  {
+   "image_id": "418521786_VR",
+   "gt": "Dunlop",
+   "n_gruppen": 2,
+   "stimmen": [
+    "Dunlop",
+    "Pirelli"
+   ],
+   "any_richtig": true,
+   "any_choice": "Dunlop",
+   "mehrheit": "Dunlop",
+   "mehrheit_richtig": true,
+   "uneins": true,
+   "mittel_p_best": "Dunlop",
+   "mittel_p_richtig": true,
+   "p_gt_max": 0.98,
+   "p_gt_mean": 0.57,
+   "kosten": 0.000921984
+  },
+  {
+   "image_id": "418526020_HR",
+   "gt": "Continental",
+   "n_gruppen": 2,
+   "stimmen": [
+    "Continental",
+    "Continental"
+   ],
+   "any_richtig": true,
+   "any_choice": "Continental",
+   "mehrheit": "Continental",
+   "mehrheit_richtig": true,
+   "uneins": false,
+   "mittel_p_best": "Continental",
+   "mittel_p_richtig": true,
+   "p_gt_max": 1.0,
+   "p_gt_mean": 1.0,
+   "kosten": 0.0008134980000000001
+  },
+  {
+   "image_id": "418526148_HR",
+   "gt": "Pirelli",
+   "n_gruppen": 2,
+   "stimmen": [
+    "Pirelli",
+    "Pirelli"
+   ],
+   "any_richtig": true,
+   "any_choice": "Pirelli",
+   "mehrheit": "Pirelli",
+   "mehrheit_richtig": true,
+   "uneins": false,
+   "mittel_p_best": "Pirelli",
+   "mittel_p_richtig": true,
+   "p_gt_max": 1.0,
+   "p_gt_mean": 0.97,
+   "kosten": 0.0008134980000000001
+  },
+  {
+   "image_id": "418526157_VL",
+   "gt": "Continental",
+   "n_gruppen": 2,
+   "stimmen": [
+    "Continental",
+    "Continental"
+   ],
+   "any_richtig": true,
+   "any_choice": "Continental",
+   "mehrheit": "Continental",
+   "mehrheit_richtig": true,
+   "uneins": false,
+   "mittel_p_best": "Continental",
+   "mittel_p_richtig": true,
+   "p_gt_max": 1.0,
+   "p_gt_mean": 1.0,
+   "kosten": 0.0008134980000000001
+  },
+  {
+   "image_id": "418526267_HL",
+   "gt": "Michelin",
+   "n_gruppen": 2,
+   "stimmen": [
+    "Michelin",
+    "Michelin"
+   ],
+   "any_richtig": true,
+   "any_choice": "Michelin",
+   "mehrheit": "Michelin",
+   "mehrheit_richtig": true,
+   "uneins": false,
+   "mittel_p_best": "Michelin",
+   "mittel_p_richtig": true,
+   "p_gt_max": 1.0,
+   "p_gt_mean": 1.0,
+   "kosten": 0.0008134980000000001
+  },
+  {
+   "image_id": "418530614_HR",
+   "gt": "Continental",
+   "n_gruppen": 2,
+   "stimmen": [
+    "Continental",
+    "Continental"
+   ],
+   "any_richtig": true,
+   "any_choice": "Continental",
+   "mehrheit": "Continental",
+   "mehrheit_richtig": true,
+   "uneins": false,
+   "mittel_p_best": "Continental",
+   "mittel_p_richtig": true,
+   "p_gt_max": 1.0,
+   "p_gt_mean": 1.0,
+   "kosten": 0.0008134980000000001
+  },
+  {
+   "image_id": "418530669_HL",
+   "gt": "Pirelli",
+   "n_gruppen": 2,
+   "stimmen": [
+    "Pirelli",
+    "Pirelli"
+   ],
+   "any_richtig": true,
+   "any_choice": "Pirelli",
+   "mehrheit": "Pirelli",
+   "mehrheit_richtig": true,
+   "uneins": false,
+   "mittel_p_best": "Pirelli",
+   "mittel_p_richtig": true,
+   "p_gt_max": 1.0,
+   "p_gt_mean": 1.0,
+   "kosten": 0.0008134980000000001
+  },
+  {
+   "image_id": "418532162_HL",
+   "gt": "Michelin",
+   "n_gruppen": 2,
+   "stimmen": [
+    "Michelin",
+    "Michelin"
+   ],
+   "any_richtig": true,
+   "any_choice": "Michelin",
+   "mehrheit": "Michelin",
+   "mehrheit_richtig": true,
+   "uneins": false,
+   "mittel_p_best": "Michelin",
+   "mittel_p_richtig": true,
+   "p_gt_max": 1.0,
+   "p_gt_mean": 1.0,
+   "kosten": 0.0008134980000000001
+  },
+  {
+   "image_id": "418532198_HL",
+   "gt": "Michelin",
+   "n_gruppen": 2,
+   "stimmen": [
+    "Michelin",
+    "Michelin"
+   ],
+   "any_richtig": true,
+   "any_choice": "Michelin",
+   "mehrheit": "Michelin",
+   "mehrheit_richtig": true,
+   "uneins": false,
+   "mittel_p_best": "Michelin",
+   "mittel_p_richtig": true,
+   "p_gt_max": 1.0,
+   "p_gt_mean": 1.0,
+   "kosten": 0.0008134980000000001
+  },
+  {
+   "image_id": "418559267_VR",
+   "gt": "Continental",
+   "n_gruppen": 2,
+   "stimmen": [
+    "Continental",
+    "Continental"
+   ],
+   "any_richtig": true,
+   "any_choice": "Continental",
+   "mehrheit": "Continental",
+   "mehrheit_richtig": true,
+   "uneins": false,
+   "mittel_p_best": "Continental",
+   "mittel_p_richtig": true,
+   "p_gt_max": 1.0,
+   "p_gt_mean": 0.72,
+   "kosten": 0.0008134980000000001
+  },
+  {
+   "image_id": "418568022_VR",
+   "gt": "Bridgestone",
+   "n_gruppen": 2,
+   "stimmen": [
+    "Bridgestone",
+    "Bridgestone"
+   ],
+   "any_richtig": true,
+   "any_choice": "Bridgestone",
+   "mehrheit": "Bridgestone",
+   "mehrheit_richtig": true,
+   "uneins": false,
+   "mittel_p_best": "Bridgestone",
+   "mittel_p_richtig": true,
+   "p_gt_max": 1.0,
+   "p_gt_mean": 0.99,
+   "kosten": 0.0008134980000000001
+  },
+  {
+   "image_id": "418568215_HL",
+   "gt": "Dunlop",
+   "n_gruppen": 2,
+   "stimmen": [
+    "Pirelli",
+    "Dunlop"
+   ],
+   "any_richtig": true,
+   "any_choice": "Dunlop",
+   "mehrheit": "Pirelli",
+   "mehrheit_richtig": false,
+   "uneins": true,
+   "mittel_p_best": "Dunlop",
+   "mittel_p_richtig": true,
+   "p_gt_max": 1.0,
+   "p_gt_mean": 0.54,
+   "kosten": 0.0008134980000000001
+  },
+  {
+   "image_id": "418569140_VL",
+   "gt": "Bridgestone",
+   "n_gruppen": 2,
+   "stimmen": [
+    "Bridgestone",
+    "Bridgestone"
+   ],
+   "any_richtig": true,
+   "any_choice": "Bridgestone",
+   "mehrheit": "Bridgestone",
+   "mehrheit_richtig": true,
+   "uneins": false,
+   "mittel_p_best": "Bridgestone",
+   "mittel_p_richtig": true,
+   "p_gt_max": 0.98,
+   "p_gt_mean": 0.9450000000000001,
+   "kosten": 0.0008134980000000001
+  },
+  {
+   "image_id": "418569250_VL",
+   "gt": "Bridgestone",
+   "n_gruppen": 2,
+   "stimmen": [
+    "Bridgestone",
+    "Bridgestone"
+   ],
+   "any_richtig": true,
+   "any_choice": "Bridgestone",
+   "mehrheit": "Bridgestone",
+   "mehrheit_richtig": true,
+   "uneins": false,
+   "mittel_p_best": "Bridgestone",
+   "mittel_p_richtig": true,
+   "p_gt_max": 1.0,
+   "p_gt_mean": 1.0,
+   "kosten": 0.000921984
+  },
+  {
+   "image_id": "418569295_VR",
+   "gt": "Bridgestone",
+   "n_gruppen": 2,
+   "stimmen": [
+    "Bridgestone",
+    "Bridgestone"
+   ],
+   "any_richtig": true,
+   "any_choice": "Bridgestone",
+   "mehrheit": "Bridgestone",
+   "mehrheit_richtig": true,
+   "uneins": false,
+   "mittel_p_best": "Bridgestone",
+   "mittel_p_richtig": true,
+   "p_gt_max": 1.0,
+   "p_gt_mean": 0.975,
+   "kosten": 0.0008134980000000001
+  },
+  {
+   "image_id": "418572762_HL",
+   "gt": "Bridgestone",
+   "n_gruppen": 2,
+   "stimmen": [
+    "Bridgestone",
+    "Bridgestone"
+   ],
+   "any_richtig": true,
+   "any_choice": "Bridgestone",
+   "mehrheit": "Bridgestone",
+   "mehrheit_richtig": true,
+   "uneins": false,
+   "mittel_p_best": "Bridgestone",
+   "mittel_p_richtig": true,
+   "p_gt_max": 1.0,
+   "p_gt_mean": 0.995,
+   "kosten": 0.0008134980000000001
+  },
+  {
+   "image_id": "418572964_HR",
+   "gt": "Continental",
+   "n_gruppen": 2,
+   "stimmen": [
+    "Continental",
+    "Continental"
+   ],
+   "any_richtig": true,
+   "any_choice": "Continental",
+   "mehrheit": "Continental",
+   "mehrheit_richtig": true,
+   "uneins": false,
+   "mittel_p_best": "Continental",
+   "mittel_p_richtig": true,
+   "p_gt_max": 1.0,
+   "p_gt_mean": 1.0,
+   "kosten": 0.0008134980000000001
+  },
+  {
+   "image_id": "418582149_HR",
+   "gt": "Bridgestone",
+   "n_gruppen": 2,
+   "stimmen": [
+    "Bridgestone",
+    "Bridgestone"
+   ],
+   "any_richtig": true,
+   "any_choice": "Bridgestone",
+   "mehrheit": "Bridgestone",
+   "mehrheit_richtig": true,
+   "uneins": false,
+   "mittel_p_best": "Bridgestone",
+   "mittel_p_richtig": true,
+   "p_gt_max": 0.99,
+   "p_gt_mean": 0.935,
+   "kosten": 0.0008134980000000001
+  },
+  {
+   "image_id": "418582240_HR",
+   "gt": "Continental",
+   "n_gruppen": 2,
+   "stimmen": [
+    "Continental",
+    "Continental"
+   ],
+   "any_richtig": true,
+   "any_choice": "Continental",
+   "mehrheit": "Continental",
+   "mehrheit_richtig": true,
+   "uneins": false,
+   "mittel_p_best": "Continental",
+   "mittel_p_richtig": true,
+   "p_gt_max": 1.0,
+   "p_gt_mean": 0.99,
+   "kosten": 0.000921984
+  },
+  {
+   "image_id": "418619446_VR",
+   "gt": "Michelin",
+   "n_gruppen": 2,
+   "stimmen": [
+    "Michelin",
+    "Michelin"
+   ],
+   "any_richtig": true,
+   "any_choice": "Michelin",
+   "mehrheit": "Michelin",
+   "mehrheit_richtig": true,
+   "uneins": false,
+   "mittel_p_best": "Michelin",
+   "mittel_p_richtig": true,
+   "p_gt_max": 1.0,
+   "p_gt_mean": 1.0,
+   "kosten": 0.0008134980000000001
+  },
+  {
+   "image_id": "418634260_HR",
+   "gt": "Ohne erkennbare Marke",
+   "n_gruppen": 2,
+   "stimmen": [
+    "Nokian",
+    "Dunlop"
+   ],
+   "any_richtig": false,
+   "any_choice": "Nokian",
+   "mehrheit": "Nokian",
+   "mehrheit_richtig": false,
+   "uneins": true,
+   "mittel_p_best": "Dunlop",
+   "mittel_p_richtig": false,
+   "p_gt_max": null,
+   "p_gt_mean": null,
+   "kosten": 0.000921984
+  },
+  {
+   "image_id": "418634352_VL",
+   "gt": "Michelin",
+   "n_gruppen": 2,
+   "stimmen": [
+    "Michelin",
+    "Michelin"
+   ],
+   "any_richtig": true,
+   "any_choice": "Michelin",
+   "mehrheit": "Michelin",
+   "mehrheit_richtig": true,
+   "uneins": false,
+   "mittel_p_best": "Michelin",
+   "mittel_p_richtig": true,
+   "p_gt_max": 1.0,
+   "p_gt_mean": 1.0,
+   "kosten": 0.0008134980000000001
+  },
+  {
+   "image_id": "418643446_HL",
+   "gt": "Michelin",
+   "n_gruppen": 2,
+   "stimmen": [
+    "Michelin",
+    "Michelin"
+   ],
+   "any_richtig": true,
+   "any_choice": "Michelin",
+   "mehrheit": "Michelin",
+   "mehrheit_richtig": true,
+   "uneins": false,
+   "mittel_p_best": "Michelin",
+   "mittel_p_richtig": true,
+   "p_gt_max": 1.0,
+   "p_gt_mean": 1.0,
+   "kosten": 0.0008134980000000001
+  },
+  {
+   "image_id": "418652080_VR",
+   "gt": "Michelin",
+   "n_gruppen": 2,
+   "stimmen": [
+    "Michelin",
+    "Michelin"
+   ],
+   "any_richtig": true,
+   "any_choice": "Michelin",
+   "mehrheit": "Michelin",
+   "mehrheit_richtig": true,
+   "uneins": false,
+   "mittel_p_best": "Michelin",
+   "mittel_p_richtig": true,
+   "p_gt_max": 1.0,
+   "p_gt_mean": 1.0,
+   "kosten": 0.0008134980000000001
+  },
+  {
+   "image_id": "418654776_HL",
+   "gt": "Continental",
+   "n_gruppen": 2,
+   "stimmen": [
+    "Continental",
+    "Continental"
+   ],
+   "any_richtig": true,
+   "any_choice": "Continental",
+   "mehrheit": "Continental",
+   "mehrheit_richtig": true,
+   "uneins": false,
+   "mittel_p_best": "Continental",
+   "mittel_p_richtig": true,
+   "p_gt_max": 1.0,
+   "p_gt_mean": 1.0,
+   "kosten": 0.000921984
+  },
+  {
+   "image_id": "418691094_HR",
+   "gt": "Continental",
+   "n_gruppen": 2,
+   "stimmen": [
+    "Continental",
+    "Continental"
+   ],
+   "any_richtig": true,
+   "any_choice": "Continental",
+   "mehrheit": "Continental",
+   "mehrheit_richtig": true,
+   "uneins": false,
+   "mittel_p_best": "Continental",
+   "mittel_p_richtig": true,
+   "p_gt_max": 1.0,
+   "p_gt_mean": 1.0,
+   "kosten": 0.0008134980000000001
+  },
+  {
+   "image_id": "418691287_VL",
+   "gt": "Hankook",
+   "n_gruppen": 2,
+   "stimmen": [
+    "Hankook",
+    "Hankook"
+   ],
+   "any_richtig": true,
+   "any_choice": "Hankook",
+   "mehrheit": "Hankook",
+   "mehrheit_richtig": true,
+   "uneins": false,
+   "mittel_p_best": "Hankook",
+   "mittel_p_richtig": true,
+   "p_gt_max": 1.0,
+   "p_gt_mean": 0.94,
+   "kosten": 0.0008134980000000001
+  },
+  {
+   "image_id": "418691636_HL",
+   "gt": "Hankook",
+   "n_gruppen": 2,
+   "stimmen": [
+    "Hankook",
+    "Hankook"
+   ],
+   "any_richtig": true,
+   "any_choice": "Hankook",
+   "mehrheit": "Hankook",
+   "mehrheit_richtig": true,
+   "uneins": false,
+   "mittel_p_best": "Hankook",
+   "mittel_p_richtig": true,
+   "p_gt_max": 1.0,
+   "p_gt_mean": 0.8200000000000001,
+   "kosten": 0.0008134980000000001
+  },
+  {
+   "image_id": "418720336_VR",
+   "gt": "Bridgestone",
+   "n_gruppen": 2,
+   "stimmen": [
+    "Bridgestone",
+    "Bridgestone"
+   ],
+   "any_richtig": true,
+   "any_choice": "Bridgestone",
+   "mehrheit": "Bridgestone",
+   "mehrheit_richtig": true,
+   "uneins": false,
+   "mittel_p_best": "Bridgestone",
+   "mittel_p_richtig": true,
+   "p_gt_max": 1.0,
+   "p_gt_mean": 1.0,
+   "kosten": 0.0008134980000000001
+  },
+  {
+   "image_id": "418723158_HL",
+   "gt": "Pirelli",
+   "n_gruppen": 2,
+   "stimmen": [
+    "Pirelli",
+    "Pirelli"
+   ],
+   "any_richtig": true,
+   "any_choice": "Pirelli",
+   "mehrheit": "Pirelli",
+   "mehrheit_richtig": true,
+   "uneins": false,
+   "mittel_p_best": "Pirelli",
+   "mittel_p_richtig": true,
+   "p_gt_max": 1.0,
+   "p_gt_mean": 0.975,
+   "kosten": 0.0008134980000000001
+  },
+  {
+   "image_id": "418723268_HL",
+   "gt": "Dunlop",
+   "n_gruppen": 2,
+   "stimmen": [
+    "Dunlop",
+    "Dunlop"
+   ],
+   "any_richtig": true,
+   "any_choice": "Dunlop",
+   "mehrheit": "Dunlop",
+   "mehrheit_richtig": true,
+   "uneins": false,
+   "mittel_p_best": "Dunlop",
+   "mittel_p_richtig": true,
+   "p_gt_max": 1.0,
+   "p_gt_mean": 1.0,
+   "kosten": 0.0008134980000000001
+  },
+  {
+   "image_id": "418725064_HL",
+   "gt": "Bridgestone",
+   "n_gruppen": 2,
+   "stimmen": [
+    "Bridgestone",
+    "Bridgestone"
+   ],
+   "any_richtig": true,
+   "any_choice": "Bridgestone",
+   "mehrheit": "Bridgestone",
+   "mehrheit_richtig": true,
+   "uneins": false,
+   "mittel_p_best": "Bridgestone",
+   "mittel_p_richtig": true,
+   "p_gt_max": 1.0,
+   "p_gt_mean": 1.0,
+   "kosten": 0.0008134980000000001
+  },
+  {
+   "image_id": "418725230_HR",
+   "gt": "Dunlop",
+   "n_gruppen": 2,
+   "stimmen": [
+    "Dunlop",
+    "Dunlop"
+   ],
+   "any_richtig": true,
+   "any_choice": "Dunlop",
+   "mehrheit": "Dunlop",
+   "mehrheit_richtig": true,
+   "uneins": false,
+   "mittel_p_best": "Dunlop",
+   "mittel_p_richtig": true,
+   "p_gt_max": 1.0,
+   "p_gt_mean": 1.0,
+   "kosten": 0.0008134980000000001
+  },
+  {
+   "image_id": "418725414_HL",
+   "gt": "Hankook",
+   "n_gruppen": 2,
+   "stimmen": [
+    "Hankook",
+    "Hankook"
+   ],
+   "any_richtig": true,
+   "any_choice": "Hankook",
+   "mehrheit": "Hankook",
+   "mehrheit_richtig": true,
+   "uneins": false,
+   "mittel_p_best": "Hankook",
+   "mittel_p_richtig": true,
+   "p_gt_max": 1.0,
+   "p_gt_mean": 1.0,
+   "kosten": 0.0008134980000000001
+  },
+  {
+   "image_id": "418725495_HL",
+   "gt": "Continental",
+   "n_gruppen": 2,
+   "stimmen": [
+    "Continental",
+    "Continental"
+   ],
+   "any_richtig": true,
+   "any_choice": "Continental",
+   "mehrheit": "Continental",
+   "mehrheit_richtig": true,
+   "uneins": false,
+   "mittel_p_best": "Continental",
+   "mittel_p_richtig": true,
+   "p_gt_max": 1.0,
+   "p_gt_mean": 0.99,
+   "kosten": 0.0008134980000000001
+  },
+  {
+   "image_id": "418725661_HL",
+   "gt": "Pirelli",
+   "n_gruppen": 2,
+   "stimmen": [
+    "Pirelli",
+    "Pirelli"
+   ],
+   "any_richtig": true,
+   "any_choice": "Pirelli",
+   "mehrheit": "Pirelli",
+   "mehrheit_richtig": true,
+   "uneins": false,
+   "mittel_p_best": "Pirelli",
+   "mittel_p_richtig": true,
+   "p_gt_max": 1.0,
+   "p_gt_mean": 0.995,
+   "kosten": 0.0008134980000000001
+  },
+  {
+   "image_id": "418742556_VR",
+   "gt": "Pirelli",
+   "n_gruppen": 2,
+   "stimmen": [
+    "Pirelli",
+    "Pirelli"
+   ],
+   "any_richtig": true,
+   "any_choice": "Pirelli",
+   "mehrheit": "Pirelli",
+   "mehrheit_richtig": true,
+   "uneins": false,
+   "mittel_p_best": "Pirelli",
+   "mittel_p_richtig": true,
+   "p_gt_max": 1.0,
+   "p_gt_mean": 1.0,
+   "kosten": 0.0008134980000000001
+  },
+  {
+   "image_id": "5bc9aaa5500b44ab9ddf498cac43c2d0_preprocessed_unwrapped_40412419_train",
+   "gt": "Continental",
+   "n_gruppen": 5,
+   "stimmen": [
+    "Continental",
+    "Continental",
+    "KEINE MARKE LESBAR",
+    "Continental",
+    "KEINE MARKE LESBAR"
+   ],
+   "any_richtig": true,
+   "any_choice": "Continental",
+   "mehrheit": "Continental",
+   "mehrheit_richtig": true,
+   "uneins": true,
+   "mittel_p_best": "Continental",
+   "mittel_p_richtig": true,
+   "p_gt_max": 1.0,
+   "p_gt_mean": 0.628,
+   "kosten": 0.0016651320000000002
+  },
+  {
+   "image_id": "6aece5af264c4404922087a95a4f6f41_preprocessed_unwrapped_QA0170090050_train",
+   "gt": "Continental",
+   "n_gruppen": 3,
+   "stimmen": [
+    "Continental",
+    "Continental",
+    "Continental"
+   ],
+   "any_richtig": true,
+   "any_choice": "Continental",
+   "mehrheit": "Continental",
+   "mehrheit_richtig": true,
+   "uneins": false,
+   "mittel_p_best": "Continental",
+   "mittel_p_richtig": true,
+   "p_gt_max": 1.0,
+   "p_gt_mean": 0.9966666666666667,
+   "kosten": 0.001457022
+  },
+  {
+   "image_id": "71e60f0f0bbb47798f2f8dae5e4f024c_preprocessed_unwrapped_QA0170090050_train",
+   "gt": "Continental",
+   "n_gruppen": 4,
+   "stimmen": [
+    "Continental",
+    "Continental",
+    "Continental",
+    "Continental"
+   ],
+   "any_richtig": true,
+   "any_choice": "Continental",
+   "mehrheit": "Continental",
+   "mehrheit_richtig": true,
+   "uneins": false,
+   "mittel_p_best": "Continental",
+   "mittel_p_richtig": true,
+   "p_gt_max": 1.0,
+   "p_gt_mean": 1.0,
+   "kosten": 0.00151263
+  },
+  {
+   "image_id": "72c7a8a2bc904406ab6d8873274855bd_preprocessed_unwrapped_QA0170090050_test",
+   "gt": "Ohne erkennbare Marke",
+   "n_gruppen": 3,
+   "stimmen": [
+    "Firestone",
+    "Continental",
+    "KEINE MARKE LESBAR"
+   ],
+   "any_richtig": false,
+   "any_choice": "Firestone",
+   "mehrheit": "Firestone",
+   "mehrheit_richtig": false,
+   "uneins": true,
+   "mittel_p_best": "KEINE MARKE LESBAR",
+   "mittel_p_richtig": false,
+   "p_gt_max": null,
+   "p_gt_mean": null,
+   "kosten": 0.001361346
+  },
+  {
+   "image_id": "77e9d21406e4496b99d3c2120058ce77_preprocessed_unwrapped_GBC23030035_train",
+   "gt": "Bridgestone",
+   "n_gruppen": 4,
+   "stimmen": [
+    "Bridgestone",
+    "Bridgestone",
+    "Bridgestone",
+    "Bridgestone"
+   ],
+   "any_richtig": true,
+   "any_choice": "Bridgestone",
+   "mehrheit": "Bridgestone",
+   "mehrheit_richtig": true,
+   "uneins": false,
+   "mittel_p_best": "Bridgestone",
+   "mittel_p_richtig": true,
+   "p_gt_max": 1.0,
+   "p_gt_mean": 0.9725,
+   "kosten": 0.0015546720000000002
+  },
+  {
+   "image_id": "796174081a6e47849229e7a89548977f_preprocessed_unwrapped_QA0170090050_train",
+   "gt": "Bridgestone",
+   "n_gruppen": 6,
+   "stimmen": [
+    "Continental",
+    "Bridgestone",
+    "Bridgestone",
+    "Bridgestone",
+    "Bridgestone",
+    "KEINE MARKE LESBAR"
+   ],
+   "any_richtig": true,
+   "any_choice": "Bridgestone",
+   "mehrheit": "Bridgestone",
+   "mehrheit_richtig": true,
+   "uneins": true,
+   "mittel_p_best": "Bridgestone",
+   "mittel_p_richtig": true,
+   "p_gt_max": 1.0,
+   "p_gt_mean": 0.6566666666666666,
+   "kosten": 0.0011319000000000001
+  },
+  {
+   "image_id": "7a378ac453d34f2ea1de9ea112cd43e1_preprocessed_unwrapped_GBC23030035_train",
+   "gt": "Continental",
+   "n_gruppen": 5,
+   "stimmen": [
+    "KEINE MARKE LESBAR",
+    "Continental",
+    "Continental",
+    "KEINE MARKE LESBAR",
+    "KEINE MARKE LESBAR"
+   ],
+   "any_richtig": true,
+   "any_choice": "Continental",
+   "mehrheit": "KEINE MARKE LESBAR",
+   "mehrheit_richtig": false,
+   "uneins": true,
+   "mittel_p_best": "Continental",
+   "mittel_p_richtig": true,
+   "p_gt_max": 1.0,
+   "p_gt_mean": 0.42800000000000005,
+   "kosten": 0.0015057
+  },
+  {
+   "image_id": "7d803459e5724aa496b1989aa9700b1c_preprocessed_unwrapped_40412419_train",
+   "gt": "Bridgestone",
+   "n_gruppen": 6,
+   "stimmen": [
+    "Bridgestone",
+    "KEINE MARKE LESBAR",
+    "Bridgestone",
+    "KEINE MARKE LESBAR",
+    "Bridgestone",
+    "Dunlop"
+   ],
+   "any_richtig": true,
+   "any_choice": "Bridgestone",
+   "mehrheit": "Bridgestone",
+   "mehrheit_richtig": true,
+   "uneins": true,
+   "mittel_p_best": "Bridgestone",
+   "mittel_p_richtig": true,
+   "p_gt_max": 1.0,
+   "p_gt_mean": 0.525,
+   "kosten": 0.001410906
+  },
+  {
+   "image_id": "8f2ab6f752154399a9145413e1b83c5f_preprocessed_unwrapped_GBC23030035_train",
+   "gt": "Bridgestone",
+   "n_gruppen": 5,
+   "stimmen": [
+    "Bridgestone",
+    "KEINE MARKE LESBAR",
+    "Bridgestone",
+    "KEINE MARKE LESBAR",
+    "Bridgestone"
+   ],
+   "any_richtig": true,
+   "any_choice": "Bridgestone",
+   "mehrheit": "Bridgestone",
+   "mehrheit_richtig": true,
+   "uneins": true,
+   "mittel_p_best": "Bridgestone",
+   "mittel_p_richtig": true,
+   "p_gt_max": 1.0,
+   "p_gt_mean": 0.61,
+   "kosten": 0.00154266
+  },
+  {
+   "image_id": "93b8207b3c15493c84ce9ce97ab8b15d_preprocessed_unwrapped_40412419_train",
+   "gt": "Continental",
+   "n_gruppen": 5,
+   "stimmen": [
+    "Continental",
+    "Continental",
+    "Continental",
+    "Continental",
+    "Continental"
+   ],
+   "any_richtig": true,
+   "any_choice": "Continental",
+   "mehrheit": "Continental",
+   "mehrheit_richtig": true,
+   "uneins": false,
+   "mittel_p_best": "Continental",
+   "mittel_p_richtig": true,
+   "p_gt_max": 1.0,
+   "p_gt_mean": 0.99,
+   "kosten": 0.00155841
+  },
+  {
+   "image_id": "95c22ac8013d4604bac2f010cb0e4218_preprocessed_unwrapped_GBC23030035_train",
+   "gt": "Ohne erkennbare Marke",
+   "n_gruppen": 6,
+   "stimmen": [
+    "Dunlop",
+    "KEINE MARKE LESBAR",
+    "Kleber",
+    "Continental",
+    "Dunlop",
+    "KEINE MARKE LESBAR"
+   ],
+   "any_richtig": false,
+   "any_choice": "Dunlop",
+   "mehrheit": "Dunlop",
+   "mehrheit_richtig": false,
+   "uneins": true,
+   "mittel_p_best": "Dunlop",
+   "mittel_p_richtig": false,
+   "p_gt_max": null,
+   "p_gt_mean": null,
+   "kosten": 0.001491462
+  },
+  {
+   "image_id": "9e3d3e7e3a464c449c78d41f8f479812_preprocessed_unwrapped_40412419_train",
+   "gt": "Bridgestone",
+   "n_gruppen": 5,
+   "stimmen": [
+    "Bridgestone",
+    "Bridgestone",
+    "Bridgestone",
+    "Bridgestone",
+    "Bridgestone"
+   ],
+   "any_richtig": true,
+   "any_choice": "Bridgestone",
+   "mehrheit": "Bridgestone",
+   "mehrheit_richtig": true,
+   "uneins": false,
+   "mittel_p_best": "Bridgestone",
+   "mittel_p_richtig": true,
+   "p_gt_max": 1.0,
+   "p_gt_mean": 0.78,
+   "kosten": 0.0016651320000000002
+  },
+  {
+   "image_id": "9f95158a2a12422b8319927e5ce9cac5_preprocessed_unwrapped_QA0170090050_train",
+   "gt": "Ohne erkennbare Marke",
+   "n_gruppen": 3,
+   "stimmen": [
+    "Continental",
+    "Firestone",
+    "Continental"
+   ],
+   "any_richtig": false,
+   "any_choice": "Continental",
+   "mehrheit": "Continental",
+   "mehrheit_richtig": false,
+   "uneins": true,
+   "mittel_p_best": "Continental",
+   "mittel_p_richtig": false,
+   "p_gt_max": null,
+   "p_gt_mean": null,
+   "kosten": 0.001361346
+  },
+  {
+   "image_id": "a4d9699e63e0441db2ee826cba716eb9_preprocessed_unwrapped_40412419_train",
+   "gt": "Bridgestone",
+   "n_gruppen": 6,
+   "stimmen": [
+    "Hankook",
+    "Bridgestone",
+    "Michelin",
+    "Bridgestone",
+    "Bridgestone",
+    "KEINE MARKE LESBAR"
+   ],
+   "any_richtig": true,
+   "any_choice": "Bridgestone",
+   "mehrheit": "Bridgestone",
+   "mehrheit_richtig": true,
+   "uneins": true,
+   "mittel_p_best": "Bridgestone",
+   "mittel_p_richtig": true,
+   "p_gt_max": 1.0,
+   "p_gt_mean": 0.48333333333333334,
+   "kosten": 0.001488816
+  },
+  {
+   "image_id": "a61a2ac2994a430f9548d864eb8c93ad_preprocessed_unwrapped_GBC23030035_train",
+   "gt": "Ohne erkennbare Marke",
+   "n_gruppen": 5,
+   "stimmen": [
+    "Firestone",
+    "Firestone",
+    "Dunlop",
+    "Continental",
+    "Dunlop"
+   ],
+   "any_richtig": false,
+   "any_choice": "Firestone",
+   "mehrheit": "Firestone",
+   "mehrheit_richtig": false,
+   "uneins": true,
+   "mittel_p_best": "Dunlop",
+   "mittel_p_richtig": false,
+   "p_gt_max": null,
+   "p_gt_mean": null,
+   "kosten": 0.001448832
+  },
+  {
+   "image_id": "ae0f2e7e09ec47cfa52289d13f0dd094_preprocessed_unwrapped_40412419_test",
+   "gt": "Bridgestone",
+   "n_gruppen": 5,
+   "stimmen": [
+    "Bridgestone",
+    "Bridgestone",
+    "Bridgestone",
+    "Pirelli",
+    "Bridgestone"
+   ],
+   "any_richtig": true,
+   "any_choice": "Bridgestone",
+   "mehrheit": "Bridgestone",
+   "mehrheit_richtig": true,
+   "uneins": true,
+   "mittel_p_best": "Bridgestone",
+   "mittel_p_richtig": true,
+   "p_gt_max": 1.0,
+   "p_gt_mean": 0.746,
+   "kosten": 0.001648752
+  },
+  {
+   "image_id": "ae8426088d52452c9b72dc5c386e004b_preprocessed_unwrapped_GBC23030035_train",
+   "gt": "Bridgestone",
+   "n_gruppen": 6,
+   "stimmen": [
+    "Vredestein",
+    "Bridgestone",
+    "Pirelli",
+    "Bridgestone",
+    "Bridgestone",
+    "Michelin"
+   ],
+   "any_richtig": true,
+   "any_choice": "Bridgestone",
+   "mehrheit": "Bridgestone",
+   "mehrheit_richtig": true,
+   "uneins": true,
+   "mittel_p_best": "Bridgestone",
+   "mittel_p_richtig": true,
+   "p_gt_max": 1.0,
+   "p_gt_mean": 0.45,
+   "kosten": 0.001447362
+  },
+  {
+   "image_id": "b11e958307714a8695b5563ac9808920_preprocessed_unwrapped_QA0170090050_train",
+   "gt": "Bridgestone",
+   "n_gruppen": 6,
+   "stimmen": [
+    "Bridgestone",
+    "Continental",
+    "Bridgestone",
+    "KEINE MARKE LESBAR",
+    "Bridgestone",
+    "Bridgestone"
+   ],
+   "any_richtig": true,
+   "any_choice": "Bridgestone",
+   "mehrheit": "Bridgestone",
+   "mehrheit_richtig": true,
+   "uneins": true,
+   "mittel_p_best": "Bridgestone",
+   "mittel_p_richtig": true,
+   "p_gt_max": 1.0,
+   "p_gt_mean": 0.7116666666666666,
+   "kosten": 0.001139376
+  },
+  {
+   "image_id": "bdf2cbdbdb554406901e473a79b10bbb_preprocessed_unwrapped_QA0170090050_train",
+   "gt": "Bridgestone",
+   "n_gruppen": 4,
+   "stimmen": [
+    "Bridgestone",
+    "Bridgestone",
+    "Bridgestone",
+    "Bridgestone"
+   ],
+   "any_richtig": true,
+   "any_choice": "Bridgestone",
+   "mehrheit": "Bridgestone",
+   "mehrheit_richtig": true,
+   "uneins": false,
+   "mittel_p_best": "Bridgestone",
+   "mittel_p_richtig": true,
+   "p_gt_max": 1.0,
+   "p_gt_mean": 0.8975,
+   "kosten": 0.001642578
+  },
+  {
+   "image_id": "be218e66c9fc464caa008234a8aff81b_preprocessed_unwrapped_40412419_train",
+   "gt": "Ohne erkennbare Marke",
+   "n_gruppen": 5,
+   "stimmen": [
+    "Dunlop",
+    "Michelin",
+    "Dunlop",
+    "KEINE MARKE LESBAR",
+    "Fulda"
+   ],
+   "any_richtig": false,
+   "any_choice": "Dunlop",
+   "mehrheit": "Dunlop",
+   "mehrheit_richtig": false,
+   "uneins": true,
+   "mittel_p_best": "Dunlop",
+   "mittel_p_richtig": false,
+   "p_gt_max": null,
+   "p_gt_mean": null,
+   "kosten": 0.0016062900000000002
+  },
+  {
+   "image_id": "c1de5ef9203d4656a11431a1ea6b1b22_preprocessed_unwrapped_40412419_validation",
+   "gt": "Bridgestone",
+   "n_gruppen": 6,
+   "stimmen": [
+    "Bridgestone",
+    "Michelin",
+    "Firestone",
+    "Kumho",
+    "Bridgestone",
+    "Firestone"
+   ],
+   "any_richtig": true,
+   "any_choice": "Bridgestone",
+   "mehrheit": "Bridgestone",
+   "mehrheit_richtig": true,
+   "uneins": true,
+   "mittel_p_best": "Bridgestone",
+   "mittel_p_richtig": true,
+   "p_gt_max": 1.0,
+   "p_gt_mean": 0.36000000000000004,
+   "kosten": 0.001447362
+  },
+  {
+   "image_id": "c64633d90aad44d39247fd8169445744_preprocessed_unwrapped_GBC23030035_test",
+   "gt": "Bridgestone",
+   "n_gruppen": 6,
+   "stimmen": [
+    "Bridgestone",
+    "Bridgestone",
+    "Bridgestone",
+    "KEINE MARKE LESBAR",
+    "Bridgestone",
+    "Continental"
+   ],
+   "any_richtig": true,
+   "any_choice": "Bridgestone",
+   "mehrheit": "Bridgestone",
+   "mehrheit_richtig": true,
+   "uneins": true,
+   "mittel_p_best": "Bridgestone",
+   "mittel_p_richtig": true,
+   "p_gt_max": 1.0,
+   "p_gt_mean": 0.5433333333333333,
+   "kosten": 0.001577562
+  },
+  {
+   "image_id": "c7badb966e1043d1a264e152def564ed_preprocessed_unwrapped_40412419_train",
+   "gt": "Continental",
+   "n_gruppen": 5,
+   "stimmen": [
+    "KEINE MARKE LESBAR",
+    "Continental",
+    "Continental",
+    "KEINE MARKE LESBAR",
+    "KEINE MARKE LESBAR"
+   ],
+   "any_richtig": true,
+   "any_choice": "Continental",
+   "mehrheit": "KEINE MARKE LESBAR",
+   "mehrheit_richtig": false,
+   "uneins": true,
+   "mittel_p_best": "Continental",
+   "mittel_p_richtig": true,
+   "p_gt_max": 1.0,
+   "p_gt_mean": 0.42800000000000005,
+   "kosten": 0.001522122
+  },
+  {
+   "image_id": "e248a7d7ae18428a9aaeb65c34b541c4_preprocessed_unwrapped_QA0170090050_train",
+   "gt": "Bridgestone",
+   "n_gruppen": 6,
+   "stimmen": [
+    "KEINE MARKE LESBAR",
+    "Bridgestone",
+    "Bridgestone",
+    "Bridgestone",
+    "Michelin",
+    "Nokian"
+   ],
+   "any_richtig": true,
+   "any_choice": "Bridgestone",
+   "mehrheit": "Bridgestone",
+   "mehrheit_richtig": true,
+   "uneins": true,
+   "mittel_p_best": "Bridgestone",
+   "mittel_p_richtig": true,
+   "p_gt_max": 0.98,
+   "p_gt_mean": 0.365,
+   "kosten": 0.001025766
+  },
+  {
+   "image_id": "e55af534548f457d993e078ec01f2db8_preprocessed_unwrapped_40412419_train",
+   "gt": "Bridgestone",
+   "n_gruppen": 6,
+   "stimmen": [
+    "Bridgestone",
+    "KEINE MARKE LESBAR",
+    "Bridgestone",
+    "Bridgestone",
+    "Bridgestone",
+    "Bridgestone"
+   ],
+   "any_richtig": true,
+   "any_choice": "Bridgestone",
+   "mehrheit": "Bridgestone",
+   "mehrheit_richtig": true,
+   "uneins": true,
+   "mittel_p_best": "Bridgestone",
+   "mittel_p_richtig": true,
+   "p_gt_max": 0.99,
+   "p_gt_mean": 0.6066666666666667,
+   "kosten": 0.0014511840000000001
+  },
+  {
+   "image_id": "e885f0a8b683401dad637e744a7b21b3_preprocessed_unwrapped_40412419_train",
+   "gt": "Ohne erkennbare Marke",
+   "n_gruppen": 4,
+   "stimmen": [
+    "Continental",
+    "Vredestein",
+    "Dunlop",
+    "Continental"
+   ],
+   "any_richtig": false,
+   "any_choice": "Continental",
+   "mehrheit": "Continental",
+   "mehrheit_richtig": false,
+   "uneins": true,
+   "mittel_p_best": "Continental",
+   "mittel_p_richtig": false,
+   "p_gt_max": null,
+   "p_gt_mean": null,
+   "kosten": 0.001461558
+  },
+  {
+   "image_id": "ea5aaec830e544f1a6d09cbf9c04e2af_preprocessed_unwrapped_GBC23030035_train",
+   "gt": "Ohne erkennbare Marke",
+   "n_gruppen": 5,
+   "stimmen": [
+    "Dunlop",
+    "Michelin",
+    "Dunlop",
+    "Michelin",
+    "Firestone"
+   ],
+   "any_richtig": false,
+   "any_choice": "Dunlop",
+   "mehrheit": "Dunlop",
+   "mehrheit_richtig": false,
+   "uneins": true,
+   "mittel_p_best": "Dunlop",
+   "mittel_p_richtig": false,
+   "p_gt_max": null,
+   "p_gt_mean": null,
+   "kosten": 0.002074002
+  },
+  {
+   "image_id": "ecf3342c21134a50afbb78dd72a5e617_preprocessed_unwrapped_GBC23030035_validation",
+   "gt": "Continental",
+   "n_gruppen": 5,
+   "stimmen": [
+    "KEINE MARKE LESBAR",
+    "Continental",
+    "Continental",
+    "KEINE MARKE LESBAR",
+    "KEINE MARKE LESBAR"
+   ],
+   "any_richtig": true,
+   "any_choice": "Continental",
+   "mehrheit": "KEINE MARKE LESBAR",
+   "mehrheit_richtig": false,
+   "uneins": true,
+   "mittel_p_best": "KEINE MARKE LESBAR",
+   "mittel_p_richtig": false,
+   "p_gt_max": 1.0,
+   "p_gt_mean": 0.41200000000000003,
+   "kosten": 0.00164199
+  },
+  {
+   "image_id": "ed5abc4405264259ad3b4e0a0f62b874_preprocessed_unwrapped_GBC23030035_test",
+   "gt": "Bridgestone",
+   "n_gruppen": 4,
+   "stimmen": [
+    "Bridgestone",
+    "Bridgestone",
+    "Bridgestone",
+    "Bridgestone"
+   ],
+   "any_richtig": true,
+   "any_choice": "Bridgestone",
+   "mehrheit": "Bridgestone",
+   "mehrheit_richtig": true,
+   "uneins": false,
+   "mittel_p_best": "Bridgestone",
+   "mittel_p_richtig": true,
+   "p_gt_max": 1.0,
+   "p_gt_mean": 0.94,
+   "kosten": 0.0016756320000000002
+  },
+  {
+   "image_id": "fb0b20ae156e4d7b8e9aec994373e563_preprocessed_unwrapped_QA0170090050_train",
+   "gt": "Bridgestone",
+   "n_gruppen": 6,
+   "stimmen": [
+    "Bridgestone",
+    "Bridgestone",
+    "Bridgestone",
+    "Bridgestone",
+    "Bridgestone",
+    "KEINE MARKE LESBAR"
+   ],
+   "any_richtig": true,
+   "any_choice": "Bridgestone",
+   "mehrheit": "Bridgestone",
+   "mehrheit_richtig": true,
+   "uneins": true,
+   "mittel_p_best": "Bridgestone",
+   "mittel_p_richtig": true,
+   "p_gt_max": 1.0,
+   "p_gt_mean": 0.7066666666666667,
+   "kosten": 0.001077594
+  },
+  {
+   "image_id": "fb8f240fbb8e44fea39e2c92213925ee_preprocessed_unwrapped_40412419_train",
+   "gt": "Bridgestone",
+   "n_gruppen": 6,
+   "stimmen": [
+    "Bridgestone",
+    "Bridgestone",
+    "Kleber",
+    "Bridgestone",
+    "Michelin",
+    "Continental"
+   ],
+   "any_richtig": true,
+   "any_choice": "Bridgestone",
+   "mehrheit": "Bridgestone",
+   "mehrheit_richtig": true,
+   "uneins": true,
+   "mittel_p_best": "Bridgestone",
+   "mittel_p_richtig": true,
+   "p_gt_max": 1.0,
+   "p_gt_mean": 0.515,
+   "kosten": 0.0013251420000000003
+  }
+ ]
+}

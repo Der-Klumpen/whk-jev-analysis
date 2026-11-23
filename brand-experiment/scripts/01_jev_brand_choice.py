@@ -122,7 +122,7 @@ def main() -> int:
                     help="JSONL des Test-Sets oder TXT mit image_ids (je Zeile eine)")
     ap.add_argument("--ids", nargs="*", default=None,
                     help="explizite image_ids; überschreibt --testset/--limit")
-    ap.add_argument("--limit", type=int, default=5)
+    ap.add_argument("--limit", type=int, default=0, help="0 = alle Bilder des Test-Sets")
     ap.add_argument("--budget", type=float, default=4.50)
     ap.add_argument("--run", default="brand_pilot")
     args = ap.parse_args()
@@ -130,16 +130,19 @@ def main() -> int:
     if args.ids:  # Klartext-Liste von image_ids (z. B. data/pilot5.txt)
         want = set(args.ids)
         rows = [r for r in alle if r["image_id"] in want]
-    else:
+    elif args.limit > 0:
         rows = alle[:args.limit]
+    else:
+        rows = alle  # Vollauf: alle Bilder (Resume überspringt Fertige)
     RUNS.mkdir(parents=True, exist_ok=True)
     out = RUNS / f"{args.run}.jsonl"
     done = {json.loads(l)["image_id"] for l in out.read_text().splitlines()} if out.exists() else set()
     cum = json.loads(LEDGER.read_text())["cum_usd"] if LEDGER.exists() else 0.0
+    start_kumul = cum
     t0, cost, n = time.time(), 0.0, 0
     with out.open("a") as f:
         for r in rows:
-            if r["image_id"] in done or cum > args.budget:
+            if r["image_id"] in done or cum - start_kumul > args.budget:
                 continue
             antworten = []
             for gi, gruppe in enumerate(kachelgruppen(r["image_id"])):

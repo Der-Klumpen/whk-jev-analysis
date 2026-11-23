@@ -1,9 +1,9 @@
 # Brand-Experiment: Markenerkennung auf Reifenpanoramen (Jev 1.14)
 
-**Status: Pilot gelaufen.** Das Test-Set steht (100 Bilder), der Pilotlauf mit
-fünf Bildern ist abgeschlossen. Ziel ist die Messung, ob Jev die Marke eines
-Reifens richtig erkennt; die Trennung vom Katalog-Experiment hält Dokumente und
-Auswertungen übersichtlich.
+**Status: Hauptlauf gelaufen.** Das Test-Set (100 Bilder) ist vollständig
+abgefragt; die Auswertung steht, zwei Klärungen sind offen (Sichtprüfung der
+Klasse „Ohne erkennbare Marke", Wahl der Leitmetrik). Ziel ist die Messung, ob
+Jev die Marke eines Reifens richtig erkennt.
 
 ## Frage
 
@@ -15,17 +15,17 @@ Dunlop, …) — nicht beliebige Textstrings wie im Katalog-Experiment.
 
 Das Test-Set (`data/testset_100.jsonl`) umfasst 100 Bilder: alle 14 Marken mit
 mindestens einem Bild, verteilt nach Bestandsanteil, plus acht Bilder der
-Klasse „Ohne erkennbare Marke". Der Pilotlauf (`docs/pilot.md`) hat die
-Frageform bestätigt: Jev wählt die Marke direkt aus der Optionsliste, vier von
-vier klar markierten Bildern werden richtig erkannt, Kosten 0,0053 USD für
-fünf Bilder.
+Klasse „Ohne erkennbare Marke". Der Hauptlauf (`docs/hauptlauf.md`) fragte
+alle Bilder ab (332 Kachelgruppen, 0,111 USD): Auf den 92 klar markierten
+Bildern erkennt Jev die Marke nach any-tile in 100 Prozent der Fälle, nach
+Mittel-wahrscheinlichkeit in 98,9 Prozent; alle Verwechslungen entfallen auf
+die Klasse „Ohne erkennbare Marke".
 
-Vor dem Hauptlauf über alle 100 Bilder sind zwei Entscheidungen offen: die
-Behandlung der Klasse „Ohne erkennbare Marke" (Sichtprüfung der acht
-Test-Set-Bilder empfohlen, weil dort Goodyear-Produktnamen ohne
-Herstellername annotiert sind) und die Auswertungsregel für den Fall, dass
-Kachelgruppen unterschiedlich entscheiden. Restbudget des Testschlüssels:
-etwa 4,69 USD.
+Zwei Klärungen sind offen: die Sichtprüfung der acht Bilder ohne annotierte
+Marke (Vorlage in `outputs/sichtpruefung_ohne_marke/`, Eintragung in
+`data/sichtpruefung_ohne_marke.jsonl`) und die Wahl der Leitmetrik in
+`docs/auswertungsregeln.md` (Abschnitt Entscheidung). Restbudget des
+Testschlüssels: etwa 4,88 USD.
 
 ## Geplanter Aufbau (an das Katalog-Experiment angelehnt)
 
