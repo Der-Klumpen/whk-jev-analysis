@@ -16,7 +16,7 @@ from pathlib import Path
 from PIL import Image
 
 OCR = Path("/home/iiot/data/OCR")
-OUT = Path("/home/iiot/data/jev-analysis/data")
+OUT = Path("/home/iiot/data/jev-analysis/katalog-experiment/data")
 
 
 def main() -> int:

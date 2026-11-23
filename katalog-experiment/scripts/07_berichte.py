@@ -16,7 +16,7 @@ from openpyxl.styles import Alignment, Font, PatternFill
 from openpyxl.chart import BarChart, Reference
 from openpyxl.utils import get_column_letter
 
-ROOT = Path("/home/iiot/data/jev-analysis")
+ROOT = Path("/home/iiot/data/jev-analysis/katalog-experiment")
 CHARTS = ROOT / "docs/charts"
 DATA = json.loads((ROOT / "outputs/kosten_daten.json").read_text(encoding="utf-8"))
 

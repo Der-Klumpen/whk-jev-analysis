@@ -24,7 +24,7 @@ from __future__ import annotations
 import collections, json, re, xml.etree.ElementTree as ET
 from pathlib import Path
 
-ROOT = Path("/home/iiot/data/jev-analysis")
+ROOT = Path("/home/iiot/data/jev-analysis/katalog-experiment")
 OCR = Path("/home/iiot/data/OCR")
 GT_OUT = ROOT / "outputs/ground_truth.jsonl"
 CAT_JSON = ROOT / "outputs/catalog.json"

@@ -8,7 +8,7 @@ from __future__ import annotations
 import base64, mimetypes
 from pathlib import Path
 
-ROOT = Path("/home/iiot/data/jev-analysis")
+ROOT = Path("/home/iiot/data/jev-analysis/katalog-experiment")
 OUT = ROOT / "docs/praesentation.html"
 
 

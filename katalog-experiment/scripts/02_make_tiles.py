@@ -21,7 +21,7 @@ import argparse, json
 from pathlib import Path
 from PIL import Image
 
-ROOT = Path("/home/iiot/data/jev-analysis")
+ROOT = Path("/home/iiot/data/jev-analysis/katalog-experiment")
 TILE_DIR = ROOT / "outputs/tiles"
 MIN_SIDE, MAX_SIDE, MAX_AR = 280, 1568, 2.5
 TARGET_MAX_H = 627          # 1568/2.5 — höchste Höhe, bei der die Kachel volle Breite hat

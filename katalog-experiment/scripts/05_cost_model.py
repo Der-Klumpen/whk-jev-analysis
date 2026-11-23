@@ -15,7 +15,7 @@ from __future__ import annotations
 import argparse, json
 from pathlib import Path
 
-ROOT = Path("/home/iiot/data/jev-analysis")
+ROOT = Path("/home/iiot/data/jev-analysis/katalog-experiment")
 TOK_PER_MPX = 2743.0
 USD_PER_MTOK = 0.042
 MIN_SIDE, MAX_SIDE, MAX_AR = 280, 1568, 2.5
