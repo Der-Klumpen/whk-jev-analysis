@@ -11,8 +11,10 @@ Auswertung; Experimente teilen sich keine Dateien.
   des Subsets wird Jev jedes von 824 Items aus den Labels einzeln als
   Ja/Nein-Frage gestellt („Ist `X` auf dem Reifen zu lesen?"). Abgeschlossen
   (Pilot + budget-gedeckelter Messlauf), Dokumentation im Ordner.
-- **[brand-experiment/](brand-experiment/)** — Markenerkennung: Ist die Marke
-  eines Reifens erkannt? In Planung.
+- **[brand-experiment/](brand-experiment/)** — Markenerkennung: Jev wählt aus
+  einer Optionsliste die Marke eines Reifens. Abgeschlossen; 98 von 100
+  Testbildern richtig (Leitmetrik Mittel-wahrscheinlichkeit), Nebenbefund zur
+  Abhängigkeit von der Optionslisten-Abdeckung.
 
 ## Gemeinsame Datenbasis (nur lesend, liegt außerhalb des Repos)
 

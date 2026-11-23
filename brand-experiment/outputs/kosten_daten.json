@@ -1,0 +1,32 @@
+{
+ "preis_usd_pro_mtok": 0.042,
+ "experiment": "brand-experiment",
+ "stand": "23.11.2026",
+ "laeufe": [
+  {
+   "lauf": "Pilot (5 Bilder, 15 Optionen)",
+   "kachelgruppen": 13,
+   "bilder": 5,
+   "input_token": 127215,
+   "usd": 0.0053,
+   "notiz": "Frageform-Pruefung; 2 Michelin, Bridgestone, Continental, ohne Marke"
+  },
+  {
+   "lauf": "Hauptlauf (92 Bilder gewertet, 14+1 Optionen)",
+   "kachelgruppen": 332,
+   "bilder": 92,
+   "input_token": 2650625,
+   "usd": 0.1113,
+   "notiz": "92 Bilder; 8 Goodyear-Bilder hier ohne Goodyear-Option gelaufen"
+  },
+  {
+   "lauf": "Nachlauf (8 Goodyear-Bilder, 15+1 Optionen)",
+   "kachelgruppen": 33,
+   "bilder": 8,
+   "input_token": 279936,
+   "usd": 0.0118,
+   "notiz": "Goodyear in der Optionsliste"
+  }
+ ],
+ "summe_usd": 0.1284
+}
