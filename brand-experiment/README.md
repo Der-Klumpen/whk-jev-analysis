@@ -1,9 +1,8 @@
 # Brand-Experiment: Markenerkennung auf Reifenpanoramen (Jev 1.14)
 
-**Status: Hauptlauf gelaufen.** Das Test-Set (100 Bilder) ist vollständig
-abgefragt; die Auswertung steht, zwei Klärungen sind offen (Sichtprüfung der
-Klasse „Ohne erkennbare Marke", Wahl der Leitmetrik). Ziel ist die Messung, ob
-Jev die Marke eines Reifens richtig erkennt.
+**Status: abgeschlossen.** Das Test-Set (100 Bilder) ist vollständig abgefragt,
+die Sichtprüfung ist eingearbeitet, die Leitmetrik festgelegt. Ziel war die
+Messung, ob Jev die Marke eines Reifens richtig erkennt.
 
 ## Frage
 
@@ -14,18 +13,17 @@ Dunlop, …) — nicht beliebige Textstrings wie im Katalog-Experiment.
 ## Stand und nächste Schritte
 
 Das Test-Set (`data/testset_100.jsonl`) umfasst 100 Bilder: alle 14 Marken mit
-mindestens einem Bild, verteilt nach Bestandsanteil, plus acht Bilder der
-Klasse „Ohne erkennbare Marke". Der Hauptlauf (`docs/hauptlauf.md`) fragte
-alle Bilder ab (332 Kachelgruppen, 0,111 USD): Auf den 92 klar markierten
-Bildern erkennt Jev die Marke nach any-tile in 100 Prozent der Fälle, nach
-Mittel-wahrscheinlichkeit in 98,9 Prozent; alle Verwechslungen entfallen auf
-die Klasse „Ohne erkennbare Marke".
+mindestens einem Bild, verteilt nach Bestandsanteil, plus acht Bilder ohne
+annotierten Markennamen. Der Hauptlauf (`docs/hauptlauf.md`) fragte alle Bilder
+ab (332 Kachelgruppen, 0,111 USD). Die Sichtprüfung ergab, dass auf allen acht
+zuletzt genannten Bildern Goodyear erkennbar ist; der Sollwert wurde korrigiert.
+Leitmetrik ist die Mittel-wahrscheinlichkeit (`docs/auswertungsregeln.md`).
 
-Zwei Klärungen sind offen: die Sichtprüfung der acht Bilder ohne annotierte
-Marke (Vorlage in `outputs/sichtpruefung_ohne_marke/`, Eintragung in
-`data/sichtpruefung_ohne_marke.jsonl`) und die Wahl der Leitmetrik in
-`docs/auswertungsregeln.md` (Abschnitt Entscheidung). Restbudget des
-Testschlüssels: etwa 4,88 USD.
+Ergebnis: Auf den 92 Bildern mit einer der 14 angebotenen Marken liegt die
+Leitmetrik bei 91 von 92 richtig (0,989), any-tile bei 92 von 92. Die acht
+Goodyear-Bilder wurden sämtlich falsch zugeordnet, weil Goodyear in der
+Optionsliste nicht enthalten war — ein Befund zur Optionsabdeckung, nicht zu
+Erkennungsfehlern. Restbudget des Testschlüssels: etwa 4,88 USD.
 
 ## Geplanter Aufbau (an das Katalog-Experiment angelehnt)
 
