@@ -19,11 +19,12 @@ ab (332 Kachelgruppen, 0,111 USD). Die Sichtprüfung ergab, dass auf allen acht
 zuletzt genannten Bildern Goodyear erkennbar ist; der Sollwert wurde korrigiert.
 Leitmetrik ist die Mittel-wahrscheinlichkeit (`docs/auswertungsregeln.md`).
 
-Ergebnis: Auf den 92 Bildern mit einer der 14 angebotenen Marken liegt die
-Leitmetrik bei 91 von 92 richtig (0,989), any-tile bei 92 von 92. Die acht
-Goodyear-Bilder wurden sämtlich falsch zugeordnet, weil Goodyear in der
-Optionsliste nicht enthalten war — ein Befund zur Optionsabdeckung, nicht zu
-Erkennungsfehlern. Restbudget des Testschlüssels: etwa 4,88 USD.
+Ergebnis: Auf den 92 Bildern mit einer der 14 angebotenen Marken lag die
+Leitmetrik bei 91 von 92. Der Nachlauf bestätigte die Ursache der acht
+Goodyear-Fehler: Mit Goodyear in der Optionsliste werden 7 von 8 korrekt
+erkannt (any-tile 8 von 8). Über alle 100 Bilder mit vollständiger Optionsliste:
+any-tile 100/100, Mittel-wahrscheinlichkeit 98/100, Mehrheit 93/100. Restbudget
+des Testschlüssels: etwa 4,87 USD.
 
 ## Geplanter Aufbau (an das Katalog-Experiment angelehnt)
 

@@ -25,7 +25,7 @@ COST_MTOK = 0.042
 MAX_AR, MAX_SIDE, MIN_SIDE = 2.5, 1568, 280
 # Klassenliste = 14 Marken + Abwesenheitsoption (alphabetisch)
 MARKEN = ["Bridgestone", "Continental", "Dunlop", "Falken", "Firestone", "Fulda",
-          "Hankook", "Kleber", "Kumho", "Michelin", "Nokian", "Pirelli",
+          "Goodyear", "Hankook", "Kleber", "Kumho", "Michelin", "Nokian", "Pirelli",
           "Semperit", "Vredestein"]
 OPTIONEN = sorted(MARKEN + ["KEINE MARKE LESBAR"])
 # Optionen, die nur ein Bild im Subset haben (keine belastbare Aussage je Marke)
