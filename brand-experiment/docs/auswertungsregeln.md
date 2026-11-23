@@ -77,4 +77,5 @@ richtige Ergänzungsmetrik und sollte im Bericht mitgeführt werden.
 
 *(wird vom Nutzer eingetragen)*
 
-Leitmetrik: ______________________
+Leitmetrik: Mittel-wahrscheinlichkeit, mit any-tile und
+Mehrheit als Vergleichsspalten
