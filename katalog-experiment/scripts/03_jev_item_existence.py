@@ -22,7 +22,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 from PIL import Image
 
-ROOT = Path("/home/iiot/data/jev-analysis")
+ROOT = Path("/home/iiot/data/jev-analysis/katalog-experiment")
 KEY_PATH = Path.home() / "TypeSafe-Keys" / "Jev-Test-Key.txt"
 API = "https://api.typesafe.ai/v1/systemone"
 MODEL = "jev-1.14.0"
